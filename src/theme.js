@@ -9,6 +9,7 @@ export default {
     light: '#fff',
   },
   spaces: [0, 4, 8, 16, 24, 32, 64, 128],
+  indexxxxx: [11, 22, 33, 44, 55, 66, 77, 88, 99, 10],
   fontSizes: [12, 14, 16, 20, 24, 32, 40, 56, 72, 80],
   fontWeight: {
     bold: 700,
