@@ -1,10 +1,15 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import Home from './pages/Home'
+import GlobalStyle from './globalStyle'
+import theme from './theme'
 
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Home />
+    </ThemeProvider>
   )
 }
 
