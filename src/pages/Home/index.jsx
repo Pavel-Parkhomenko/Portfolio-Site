@@ -8,6 +8,7 @@ import Navigation from '../../components/Navigation'
 import InfoCard from '../../components/InfoCard'
 import { worksData } from '../../mocks/index'
 import WorkCard from '../../components/WorkCard'
+import Footer from '../../components/Footer'
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
           />
         )) }
       </ContainerWorks>
+      <Footer />
     </Container>
   )
 }

@@ -32,4 +32,5 @@ export const Button = styled.button`
   background-color: #FF6464;
   border-radius: 2px;
   color: white;
+  border: 0;
 `
