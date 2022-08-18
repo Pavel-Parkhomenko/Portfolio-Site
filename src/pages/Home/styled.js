@@ -3,6 +3,13 @@ import styled from 'styled-components'
 const paddLeft = '20%'
 const paddRight = '20%'
 
+const mediaMobile = `
+  @media (max-width: 668px){
+      padding-left: 5%;
+      padding-right: 5%;
+  } 
+`
+
 export const Container = styled.div`
   //display: flex;
   //flex-direction: column;
@@ -14,6 +21,7 @@ export const ContainerHeader = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
   margin-bottom: 71px;
+  ${mediaMobile}
 `
 
 export const ContainerInfo = styled.div`
@@ -22,11 +30,13 @@ export const ContainerInfo = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
   background-color: #EDF7FA;
+  ${mediaMobile}
 `
 
 export const ContainerWorks = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
+  ${mediaMobile}
 `
 
 export const TitleContainer = styled.p`
@@ -42,4 +52,8 @@ export const ContainerCardInfo = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  @media (max-width: 568px) {
+    flex-direction: column;
+  }
 `

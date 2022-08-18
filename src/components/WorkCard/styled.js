@@ -37,6 +37,7 @@ export const Title = styled.h3`
 `
 
 export const StackItem = styled.div`
+  font-style: italic;
   display: inline-block;
   text-align: center;
   width: auto;

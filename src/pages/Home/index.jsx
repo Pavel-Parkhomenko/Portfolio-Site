@@ -6,7 +6,7 @@ import {
 } from './styled'
 import Navigation from '../../components/Navigation'
 import InfoCard from '../../components/InfoCard'
-import { worksData } from '../../mocks/index'
+import { dataWorks } from '../../mocks/index'
 import WorkCard from '../../components/WorkCard'
 import Footer from '../../components/Footer'
 
@@ -27,7 +27,7 @@ export default function Home() {
       </ContainerInfo>
       <ContainerWorks>
         <TitleContainer>My Works</TitleContainer>
-        { worksData.slice(0, 3).map(({
+        { dataWorks.slice(0, 3).map(({
           id, title, stack, img, summary, linkGH,
         }) => (
           <WorkCard
