@@ -13,7 +13,6 @@ export const ContainerHeader = styled.div`
   margin-top: 140px;
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
-  background-color: white;
   margin-bottom: 71px;
 `
 
@@ -23,6 +22,11 @@ export const ContainerInfo = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
   background-color: #EDF7FA;
+`
+
+export const ContainerWorks = styled.div`
+  padding-left: ${paddLeft};
+  padding-right: ${paddRight};
 `
 
 export const TitleContainer = styled.p`
