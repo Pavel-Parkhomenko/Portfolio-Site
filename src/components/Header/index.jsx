@@ -6,17 +6,17 @@ import {
 } from '../../mocks'
 import {
   Title, SubTitle,
-  Container, Avatar, Button,
+  Container, Avatar, Button, TextContainer,
 } from './styled'
 
 export default function Header() {
   return (
     <Container>
-      <div>
+      <TextContainer>
         <Title>{ headerTitle }</Title>
         <SubTitle>{ headerSubTitle }</SubTitle>
         <Button>{ buttonText }</Button>
-      </div>
+      </TextContainer>
       <Avatar />
     </Container>
   )

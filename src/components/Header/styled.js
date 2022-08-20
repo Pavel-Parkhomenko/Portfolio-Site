@@ -15,6 +15,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes[7] + 4}px;
   width: 100%;
+  margin-top: 0;
   
   @media (max-width: 568px) {
     font-size: 32px;
@@ -32,7 +33,12 @@ export const SubTitle = styled.p`
 `
 
 export const TextContainer = styled.div`
-  
+  width: 60%;
+
+  @media (max-width: 568px) {
+    width: 100%;
+    text-align: center;
+  }
 `
 
 export const Avatar = styled.div`

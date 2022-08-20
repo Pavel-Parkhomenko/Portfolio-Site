@@ -33,8 +33,8 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 210px;
   background: #ffff;
   box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
   border-radius: 4px;
@@ -50,12 +50,12 @@ export const Title = styled.span`
   margin: 25px 0 15px 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 17px;
   color: #21243D;
 `
 
 export const Summary = styled.div`
   font-style: normal;
-  font-size: 12px;
+  font-size: 14px;
   color: gray;
 `

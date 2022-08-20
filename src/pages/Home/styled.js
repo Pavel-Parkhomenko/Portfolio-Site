@@ -5,8 +5,8 @@ const paddRight = '20%'
 
 const mediaMobile = `
   @media (max-width: 568px){
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 5%;
+      padding-right: 5%;
   } 
 `
 

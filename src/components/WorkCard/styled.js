@@ -28,8 +28,8 @@ export const TextContainer = styled.div`
 `
 
 export const ImgStyled = styled.div`
-  width: 246px;
-  height: 180px;
+  width: 450px;
+  height: 220px;
   background-image: url(${(props) => {
     switch (props.img) {
       case 'ANT ToDo': return todo
@@ -43,16 +43,23 @@ export const ImgStyled = styled.div`
   }});
   background-size: cover;
   border-radius: 6px;
+  margin-right: 20px;
+
+  @media (max-width: 568px) {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 `
 
 export const Title = styled.h3`
-  margin: 0;
   padding: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 44px;
   color: #21243D;
+  margin: 0 0 5px 0;
 `
 
 export const ContainerStackItem = styled.div`
@@ -81,6 +88,7 @@ export const Summary = styled.div`
   font-size: 16px;
   line-height: 24px;
   color: #21243D;
+  margin: 20px 0 20px 0;
 `
 
 export const LinkToGH = styled.a`
