@@ -12,7 +12,7 @@ import {
 export default function Header() {
   return (
     <Container>
-      <div>
+      <div style={{ width: '65%' }}>
         <Title>{ headerTitle }</Title>
         <SubTitle>{ headerSubTitle }</SubTitle>
         <Button>{ buttonText }</Button>

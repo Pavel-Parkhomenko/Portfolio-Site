@@ -34,10 +34,10 @@ export const dataWorks = [
   },
   {
     id: 5,
-    title: 'Weather App',
+    title: 'Toast Lib',
     stack: ['JavaScript', 'TypeScript', 'React', 'Styled-Components',
       'EsLint/Prettier', 'NPM', 'Rollup', 'StoryBook'],
-    summary: `AToast Javascript library, for presenting non-blocking notifications. 
+    summary: `A Toast Javascript library, for presenting non-blocking notifications. 
       It is extensible and customizable`,
     linkGH: 'https://github.com/Pavel-Parkhomenko/Toast-Lib',
   },

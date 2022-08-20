@@ -2,7 +2,7 @@ import React from 'react'
 import {
   Container, ImgStyled,
   StackItem, TextContainer, Title,
-  Summary, LinkToGH,
+  Summary, LinkToGH, ContainerStackItem,
 } from './styled'
 
 export default function WorkCard({
@@ -16,11 +16,11 @@ export default function WorkCard({
       <ImgStyled img={title} />
       <TextContainer>
         <Title>{ title }</Title>
-        <div>
+        <ContainerStackItem>
           {stack.map((item) => (
             <StackItem key={item}>{item}</StackItem>
           ))}
-        </div>
+        </ContainerStackItem>
         <Summary>{ summary }</Summary>
         <LinkToGH href={linkGH}>Notice in GH</LinkToGH>
       </TextContainer>

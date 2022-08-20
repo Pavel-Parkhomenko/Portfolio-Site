@@ -8,13 +8,18 @@ export const Container = styled.div`
   
   @media (max-width: 568px) {
     flex-direction: column-reverse;
+    align-items: center;
   }
 `
 
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes[7] + 4}px;
-  max-width: 80%;
   width: 100%;
+  
+  @media (max-width: 568px) {
+    font-size: 32px;
+    margin-top: 34px;
+  }
 `
 
 export const SubTitle = styled.p`
@@ -22,7 +27,6 @@ export const SubTitle = styled.p`
   font-weight: 400;
   font-size: ${({ theme }) => theme.fontSizes[1] + 2}px;
   line-height: 24px;
-  max-width: 80%;
   width: 100%;
   margin-bottom: 38px;
 `
@@ -33,6 +37,11 @@ export const Avatar = styled.div`
   height: 243px;
   background: url(${avatar}) 50%;
   background-size: cover;
+  
+  @media (max-width: 568px) {
+    width: 174.38px;
+    height: 180px;
+  }
 `
 
 export const Button = styled.button`

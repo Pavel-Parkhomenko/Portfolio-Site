@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header'
 import {
-  Container, ContainerCardInfo, ContainerHeader,
+  Container, ContainerHeader,
   ContainerInfo, ContainerWorks, TitleContainer,
 } from './styled'
 import Navigation from '../../components/Navigation'
@@ -19,11 +19,7 @@ export default function Home() {
       </ContainerHeader>
       <ContainerInfo>
         <TitleContainer>Information</TitleContainer>
-        <ContainerCardInfo>
-          <InfoCard />
-          <InfoCard />
-        </ContainerCardInfo>
-        <p>Read more</p>
+        <InfoCard />
       </ContainerInfo>
       <ContainerWorks>
         <TitleContainer>My Works</TitleContainer>
@@ -39,6 +35,21 @@ export default function Home() {
             summary={summary}
           />
         )) }
+        <details>
+          <summary style={{ marginBottom: '10px' }}>Show more</summary>
+          { dataWorks.slice(3).map(({
+            id, title, stack, img, summary, linkGH,
+          }) => (
+            <WorkCard
+              key={id}
+              title={title}
+              img={img}
+              linkGH={linkGH}
+              stack={stack}
+              summary={summary}
+            />
+          )) }
+        </details>
       </ContainerWorks>
       <Footer />
     </Container>

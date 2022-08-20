@@ -1,10 +1,18 @@
 import React from 'react'
-import { Card, Container } from './styled'
+import { Card, Container, Picture } from './styled'
 
 export default function InfoCard() {
   return (
     <Container>
-      <Card />
+      <Card>
+        <Picture img="family" />
+      </Card>
+      <Card>
+        <Picture img="university" />
+      </Card>
+      <Card>
+        <Picture img="programmer" />
+      </Card>
     </Container>
   )
 }

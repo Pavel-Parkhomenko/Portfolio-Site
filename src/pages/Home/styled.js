@@ -4,15 +4,13 @@ const paddLeft = '20%'
 const paddRight = '20%'
 
 const mediaMobile = `
-  @media (max-width: 668px){
+  @media (max-width: 568px){
       padding-left: 5%;
       padding-right: 5%;
   } 
 `
 
 export const Container = styled.div`
-  //display: flex;
-  //flex-direction: column;
   height: 100vh;
 `
 
@@ -27,6 +25,8 @@ export const ContainerHeader = styled.div`
 export const ContainerInfo = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
   background-color: #EDF7FA;
@@ -46,14 +46,4 @@ export const TitleContainer = styled.p`
   line-height: 60px;
   color: #21243D;
   text-align: center;
-`
-
-export const ContainerCardInfo = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  @media (max-width: 568px) {
-    flex-direction: column;
-  }
 `

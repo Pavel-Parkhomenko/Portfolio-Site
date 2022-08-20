@@ -1,5 +1,11 @@
 import styled from 'styled-components'
-import test from '../../assets/projects/todo-antd-desktop.png'
+import todo from '../../assets/projects/todo-antd-desktop.png'
+import drawing from '../../assets/projects/drawing.PNG'
+import calculator from '../../assets/projects/calculator.PNG'
+import toast from '../../assets/projects/toasts.PNG'
+import weather from '../../assets/projects/weather.png'
+import health from '../../assets/projects/your-health.png'
+import defaultImg from '../../assets/projects/default-project.jpg'
 
 export const Container = styled.div`
   display: flex;
@@ -8,6 +14,10 @@ export const Container = styled.div`
   justify-content: space-between;
   margin-bottom: 25px;
   padding-bottom: 25px;
+
+  @media (max-width: 568px) {
+    flex-direction: column;
+  }
 `
 
 export const TextContainer = styled.div`
@@ -20,7 +30,17 @@ export const TextContainer = styled.div`
 export const ImgStyled = styled.div`
   width: 246px;
   height: 180px;
-  background-image: url(${test});
+  background-image: url(${(props) => {
+    switch (props.img) {
+      case 'ANT ToDo': return todo
+      case 'Drawing Machine': return drawing
+      case 'Expression Calculator': return calculator
+      case 'Toast Lib': return toast
+      case 'Weather App': return weather
+      case 'Your Health': return health
+      default: return defaultImg
+    }
+  }});
   background-size: cover;
   border-radius: 6px;
   //background-color: green;
@@ -36,18 +56,24 @@ export const Title = styled.h3`
   color: #21243D;
 `
 
+export const ContainerStackItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+`
+
 export const StackItem = styled.div`
-  font-style: italic;
-  display: inline-block;
-  text-align: center;
-  width: auto;
-  height: 25px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
   background-color: #21243D;
   color: white;
-  margin-left: 5px;
   margin-bottom: 5px;
   border-radius: 30px;
-  padding: 0 10px 0 10px;
+  margin-right: 5px;
+  padding: 5px 10px 5px 10px;
+  white-space: nowrap;
 `
 
 export const Summary = styled.div`
