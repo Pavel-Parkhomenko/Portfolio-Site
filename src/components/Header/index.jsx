@@ -8,6 +8,7 @@ import {
   Title, SubTitle,
   Container, Avatar, Button, TextContainer,
 } from './styled'
+import doc from '../../assets/Parkhomenko_Pavel_CV_Frontend.pdf'
 
 export default function Header() {
   return (
@@ -15,7 +16,9 @@ export default function Header() {
       <TextContainer>
         <Title>{ headerTitle }</Title>
         <SubTitle>{ headerSubTitle }</SubTitle>
-        <Button>{ buttonText }</Button>
+        <Button>
+          <a href={doc} download="">{ buttonText }</a>
+        </Button>
       </TextContainer>
       <Avatar />
     </Container>

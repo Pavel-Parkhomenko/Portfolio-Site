@@ -61,4 +61,12 @@ export const Button = styled.button`
   border-radius: 2px;
   color: white;
   border: 0;
+  
+  & > a {
+    color: white;
+    text-decoration: none;
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `
