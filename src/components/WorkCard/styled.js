@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 63%;
+  //max-width: 63%;
   width: 100%;
 `
 
@@ -43,7 +43,6 @@ export const ImgStyled = styled.div`
   }});
   background-size: cover;
   border-radius: 6px;
-  //background-color: green;
 `
 
 export const Title = styled.h3`

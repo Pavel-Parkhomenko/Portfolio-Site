@@ -7,6 +7,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  @media (max-width: 568px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Picture = styled.div`
@@ -19,13 +24,12 @@ export const Picture = styled.div`
     }
   }});
   background-size: cover;
-  //background-color: green;
   width: 50px;
   height: 50px;
 `
 
 export const Card = styled.div`
-  padding-top: 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,4 +38,24 @@ export const Card = styled.div`
   background: #ffff;
   box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
   border-radius: 4px;
+  padding: 20px 15px 0 15px;
+  margin-bottom: 10px;
+  
+  @media (max-width: 568px) {
+    width: auto;
+  }
+`
+
+export const Title = styled.span`
+  margin: 25px 0 15px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #21243D;
+`
+
+export const Summary = styled.div`
+  font-style: normal;
+  font-size: 12px;
+  color: gray;
 `

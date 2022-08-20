@@ -1,18 +1,20 @@
 import React from 'react'
-import { Card, Container, Picture } from './styled'
+import {
+  Card, Container,
+  Picture, Summary, Title,
+} from './styled'
+import { info } from '../../mocks'
 
 export default function InfoCard() {
   return (
     <Container>
-      <Card>
-        <Picture img="family" />
-      </Card>
-      <Card>
-        <Picture img="university" />
-      </Card>
-      <Card>
-        <Picture img="programmer" />
-      </Card>
+      {info.map(({ title, summary, icon }) => (
+        <Card>
+          <Picture img={icon} />
+          <Title>{title}</Title>
+          <Summary>{summary}</Summary>
+        </Card>
+      ))}
     </Container>
   )
 }

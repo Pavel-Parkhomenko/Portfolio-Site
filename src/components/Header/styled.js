@@ -31,6 +31,10 @@ export const SubTitle = styled.p`
   margin-bottom: 38px;
 `
 
+export const TextContainer = styled.div`
+  
+`
+
 export const Avatar = styled.div`
   border-radius: 50%;
   width: 243px;
