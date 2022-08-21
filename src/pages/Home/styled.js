@@ -33,6 +33,12 @@ export const ContainerInfo = styled.div`
   ${mediaMobile}
 `
 
+export const ContainerTechnologies = styled.div`
+  padding-left: ${paddLeft};
+  padding-right: ${paddRight};
+  ${mediaMobile}
+`
+
 export const ContainerWorks = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
@@ -41,9 +47,9 @@ export const ContainerWorks = styled.div`
 
 export const TitleContainer = styled.p`
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 22px;
-  line-height: 60px;
+  //line-height: 60px;
   color: #21243D;
   text-align: center;
 `

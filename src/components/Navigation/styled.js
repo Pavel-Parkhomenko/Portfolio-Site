@@ -1,5 +1,4 @@
 import styled, { css, keyframes } from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const LinkStyled = styled.a`
   color: black;
@@ -15,15 +14,6 @@ const fromRight = keyframes`
   }
 `
 
-const toLeft = keyframes`
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-`
-
 export const MenuContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -31,8 +21,6 @@ export const MenuContainer = styled.div`
   width: 250px;
 
   @media (max-width: 568px) {
-    display: none;
-    
     ${(props) => (props.active ? css`
       margin-top: 10px;
       display: flex;
@@ -42,7 +30,9 @@ export const MenuContainer = styled.div`
       align-items: flex-end;
       height: 150px;
       & > a { animation: ${fromRight} 0.5s; }
-  ` : css``)};
+  ` : css`
+      display: none;
+    `)};
   }
 `
 
