@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/prefer-default-export
-export const dataWorks = [
+export default [
   {
     id: 1,
     title: 'Your Health',

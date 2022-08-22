@@ -23,7 +23,6 @@ export const Container = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  //max-width: 63%;
   width: 100%;
 `
 
@@ -44,11 +43,17 @@ export const ImgStyled = styled.div`
   background-size: cover;
   border-radius: 6px;
   margin-right: 20px;
+  transition: background-position 0.7s ease 0.2s;
 
   @media (max-width: 568px) {
     width: auto;
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  
+  :hover {
+    transition: background-position 0.7s ease 0.2s;
+    background-position: 100%;
   }
 `
 
@@ -80,6 +85,11 @@ export const StackItem = styled.div`
   margin-right: 5px;
   padding: 5px 10px 5px 10px;
   white-space: nowrap;
+
+  :hover {
+    background-color: #161936;
+    color: #8f8e8e;
+  }
 `
 
 export const Summary = styled.div`

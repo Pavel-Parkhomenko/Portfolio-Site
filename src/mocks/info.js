@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/prefer-default-export
-export const info = [
+export default [
   {
     title: 'Who am I?',
     summary: `I am an ordinary resident of Belarus from a small town. 

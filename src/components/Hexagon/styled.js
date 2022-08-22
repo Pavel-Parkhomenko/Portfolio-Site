@@ -42,10 +42,6 @@ export const ContainerItem = styled.div`
 export const SpecialContainer = styled.div`
   @media (max-width: 568px) {
     display: none;
-  //  & > :last-child {
-  //    display: none;
-  //  }
-  //}
 `
 
 export const SlideFrom = styled.div`
@@ -84,4 +80,8 @@ export const Slide = styled.div`
       default: return ph1
     }
   }});
+  
+  :hover {
+    background-position: 45%;
+  }
 `
