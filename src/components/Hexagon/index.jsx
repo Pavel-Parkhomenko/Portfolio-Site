@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   ContainerItem, Slide,
-  SlideFrom, Container, SpecialContainer,
+  SlideFrom, Container, DesktopContainer, MobileContainer,
 } from './styled'
 
 export default function Hexagon() {
@@ -17,7 +17,7 @@ export default function Hexagon() {
           </ContainerItem>
         ))}
       </div>
-      <SpecialContainer>
+      <DesktopContainer>
         {Array(4).fill(null).map((item, ind) => (
           // eslint-disable-next-line react/no-array-index-key
           <ContainerItem key={ind + 6}>
@@ -26,7 +26,17 @@ export default function Hexagon() {
             </SlideFrom>
           </ContainerItem>
         ))}
-      </SpecialContainer>
+      </DesktopContainer>
+      <MobileContainer>
+        {Array(5).fill(null).map((item, ind) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <ContainerItem key={ind + 6}>
+            <SlideFrom>
+              <Slide img={`ph${ind + 6}`} />
+            </SlideFrom>
+          </ContainerItem>
+        ))}
+      </MobileContainer>
       <div>
         {Array(5).fill(null).map((item, ind) => (
           // eslint-disable-next-line react/no-array-index-key

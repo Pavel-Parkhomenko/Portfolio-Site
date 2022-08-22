@@ -1,7 +1,7 @@
 import styled, { css, keyframes } from 'styled-components'
 
 export const LinkStyled = styled.a`
-  color: black;
+  color: ${({ theme }) => theme.textColor.primary};
   text-decoration: none;
 `
 
@@ -22,7 +22,9 @@ export const MenuContainer = styled.div`
 
   @media (max-width: 568px) {
     ${(props) => (props.active ? css`
-      margin-top: 10px;
+      position: absolute;
+      top: 70px;
+      right: 5%;
       display: flex;
       flex-direction: column;
       width: auto;
@@ -40,9 +42,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: absolute;
-  right: 30px;
-  top: 30px;
 `
 
 export const Burger = styled.div`
@@ -60,8 +59,8 @@ export const Burger = styled.div`
     width: 100%;
     position: absolute;
     height: 5px;
-    background: #333;
     border-radius: 5px;
+    background-color: ${({ theme }) => theme.bgColor.dark};
   }
   
   & > span:before {

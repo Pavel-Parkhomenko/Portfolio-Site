@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../components/Header'
 import {
   Container, ContainerExtraWorks, ContainerHeader,
-  ContainerInfo, ContainerTechnologies, ContainerWorks, TitleContainer,
+  ContainerInfo, ContainerNav, ContainerTechnologies, ContainerWorks, IconTheme, TitleContainer,
 } from './styled'
 import Navigation from '../../components/Navigation'
 import InfoCard from '../../components/InfoCard'
@@ -12,11 +12,17 @@ import WorksList from '../../components/WorksList'
 import { infoTitle, technologiesTitle, worksTitle } from '../../mocks'
 import WorksListExtra from '../../components/WorksListExtra'
 
-export default function Home() {
+export default function Home({ changeTheme, icon }) {
   return (
     <Container>
-      <ContainerHeader id="home">
+      <ContainerNav>
+        <IconTheme
+          icon={icon}
+          onClick={changeTheme}
+        />
         <Navigation />
+      </ContainerNav>
+      <ContainerHeader id="home">
         <Header />
       </ContainerHeader>
       <ContainerInfo id="info">

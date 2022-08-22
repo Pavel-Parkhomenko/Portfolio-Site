@@ -12,11 +12,15 @@ export const Container = styled.div`
   flex-direction: row;
   border-bottom: 1px solid gray;
   justify-content: space-between;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0 25px 0;
+  margin: 0;
 
   @media (max-width: 568px) {
     flex-direction: column;
+  }
+  
+  :last-child {
+    border-bottom: 0;
   }
 `
 
@@ -63,8 +67,8 @@ export const Title = styled.h3`
   font-weight: 700;
   font-size: 30px;
   line-height: 44px;
-  color: #21243D;
   margin: 0 0 5px 0;
+  color: ${({ theme }) => theme.textColor.primary};
 `
 
 export const ContainerStackItem = styled.div`
@@ -78,8 +82,10 @@ export const StackItem = styled.div`
   font-size: 12px;
   display: flex;
   align-items: center;
-  background-color: #21243D;
-  color: white;
+  background-color: ${({ theme, extraCard }) => (
+    extraCard === 'yes' ? theme.bgColor.primary : theme.bgColor.secondary
+  )};
+  color: ${({ theme }) => theme.textColor.primary};
   margin-bottom: 5px;
   border-radius: 30px;
   margin-right: 5px;
@@ -97,11 +103,15 @@ export const Summary = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #21243D;
+  color: ${({ theme }) => theme.textColor.primary};
   margin: 20px 0 20px 0;
 `
 
 export const LinkToGH = styled.a`
   text-decoration: none;
   color: gray;
+  
+  :hover {
+    text-decoration: underline;
+  }
 `

@@ -35,11 +35,12 @@ export const Card = styled.div`
   align-items: center;
   width: 230px;
   height: 210px;
-  background: #ffff;
   box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
   border-radius: 4px;
   padding: 20px 15px 0 15px;
   margin-bottom: 10px;
+  background-color: ${({ theme }) => theme.bgColor.primary};
+  color: ${({ theme }) => theme.textColor.primary};
   
   @media (max-width: 568px) {
     width: auto;
@@ -50,8 +51,7 @@ export const Title = styled.span`
   margin: 25px 0 15px 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  color: #21243D;
+  font-size: 17px;;
 `
 
 export const Summary = styled.div`

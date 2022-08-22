@@ -10,6 +10,7 @@ export default function WorkCard({
   stack,
   summary,
   linkGH,
+  extraCard,
 }) {
   return (
     <Container>
@@ -18,11 +19,11 @@ export default function WorkCard({
         <Title>{ title }</Title>
         <ContainerStackItem>
           {stack.map((item) => (
-            <StackItem key={item}>{item}</StackItem>
+            <StackItem extraCard={extraCard} key={item}>{item}</StackItem>
           ))}
         </ContainerStackItem>
         <Summary>{ summary }</Summary>
-        <LinkToGH href={linkGH}>Notice in GH</LinkToGH>
+        <LinkToGH href={linkGH}>View on the git hub</LinkToGH>
       </TextContainer>
     </Container>
   )

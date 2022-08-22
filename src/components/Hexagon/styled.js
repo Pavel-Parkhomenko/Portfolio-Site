@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import ph1 from '../../assets/stack/css.png'
-import ph2 from '../../assets/stack/js.jpg'
+import ph2 from '../../assets/stack/js.png'
 import ph3 from '../../assets/stack/eslint2.jpg'
 import ph4 from '../../assets/stack/ts.webp'
 import ph5 from '../../assets/stack/sass.png'
@@ -39,8 +39,13 @@ export const ContainerItem = styled.div`
   }
 `
 
-export const SpecialContainer = styled.div`
+export const DesktopContainer = styled.div`
   @media (max-width: 568px) {
+    display: none;
+`
+
+export const MobileContainer = styled.div`
+  @media (min-width: 568px) {
     display: none;
 `
 

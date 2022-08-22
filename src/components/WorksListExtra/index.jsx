@@ -17,6 +17,7 @@ export default function WorksListExtra() {
           linkGH={linkGH}
           stack={stack}
           summary={summary}
+          extraCard="yes"
         />
       )) }
     </Details>

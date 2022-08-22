@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import moon from '../../assets/svg/moon.svg'
+import sun from '../../assets/svg/sun.svg'
 
 const paddLeft = '20%'
 const paddRight = '20%'
@@ -12,13 +14,36 @@ const mediaMobile = `
 
 export const Container = styled.div`
   height: 100vh;
+  background-color: ${({ theme }) => theme.bgColor.primary};
+`
+
+export const ContainerNav = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px ${paddRight} 0  ${paddLeft};
+  ${mediaMobile}
+`
+
+export const IconTheme = styled.div`
+  width: 30px;
+  height: 30px;
+  background-image: url(${(props) => {
+    switch (props.icon) {
+      case 'light': return sun
+      case 'dark': return moon
+      default: return sun
+    }
+  }});
 `
 
 export const ContainerHeader = styled.div`
-  margin-top: 140px;
-  padding-left: ${paddLeft};
-  padding-right: ${paddRight};
-  margin-bottom: 71px;
+  padding: 80px ${paddRight} 70px  ${paddLeft};
+  background-color: ${({ theme }) => theme.bgColor.primary};
+  color: ${({ theme }) => theme.textColor.primary};
   ${mediaMobile}
 `
 
@@ -29,19 +54,24 @@ export const ContainerInfo = styled.div`
   padding-bottom: 40px;
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
-  background-color: #EDF7FA;
+  background-color: ${({ theme }) => theme.bgColor.secondary};
+  color: ${({ theme }) => theme.textColor.primary};
   ${mediaMobile}
 `
 
 export const ContainerTechnologies = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
+  background-color: ${({ theme }) => theme.bgColor.primary};
+  color: ${({ theme }) => theme.textColor.primary};
   ${mediaMobile}
 `
 
 export const ContainerWorks = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
+  background-color: ${({ theme }) => theme.bgColor.primary};
+  color: ${({ theme }) => theme.textColor.primary};
   ${mediaMobile}
 `
 
@@ -51,7 +81,8 @@ export const ContainerExtraWorks = styled.div`
   justify-content: space-between;
   padding-left: ${paddLeft};
   padding-right: ${paddRight};
-  background-color: #EDF7FA;
+  background-color: ${({ theme }) => theme.bgColor.secondary};
+  color: ${({ theme }) => theme.textColor.primary};
   ${mediaMobile}
 `
 
@@ -59,8 +90,8 @@ export const TitleContainer = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  //line-height: 60px;
-  color: #21243D;
+  color: ${({ theme }) => theme.textColor.primary};
   text-align: center;
-  margin: 50px 0 50px 0;
+  padding: 50px 0 50px 0;
+  margin: 0;
 `
