@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 import moon from '../../assets/svg/moon.svg'
 import sun from '../../assets/svg/sun.svg'
 
@@ -13,7 +13,7 @@ const mediaMobile = `
 `
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   background-color: ${({ theme }) => theme.bgColor.primary};
 `
 
@@ -40,10 +40,38 @@ export const IconTheme = styled.div`
   }});
 `
 
+const toLeft = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+`
+
+const toRight = keyframes`
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+`
+
 export const ContainerHeader = styled.div`
   padding: 80px ${paddRight} 70px  ${paddLeft};
   background-color: ${({ theme }) => theme.bgColor.primary};
   color: ${({ theme }) => theme.textColor.primary};
+  
+  @media (max-width: 568px) {
+    ${(props) => (props.isActive ? css`
+      overflow-y: hidden;
+      animation: ${toLeft} 0.5s;
+      animation-fill-mode: forwards;
+  ` : css`
+      animation: ${toRight} 0.5s;
+    `)};
+  }
   ${mediaMobile}
 `
 

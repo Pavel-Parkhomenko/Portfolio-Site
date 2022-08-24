@@ -94,7 +94,7 @@ export const StackItem = styled.div`
 
   :hover {
     background-color: #161936;
-    color: #8f8e8e;
+    color: white;
   }
 `
 

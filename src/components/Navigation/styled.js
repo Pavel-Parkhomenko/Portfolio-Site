@@ -18,19 +18,21 @@ export const MenuContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 250px;
+  width: 350px;
 
   @media (max-width: 568px) {
     ${(props) => (props.active ? css`
       position: absolute;
       top: 70px;
-      right: 5%;
+      right: 0;
       display: flex;
       flex-direction: column;
       width: auto;
-      justify-content: space-between;
-      align-items: flex-end;
-      height: 150px;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      height: 500px;
+      background-color: ${({ theme }) => theme.bgColor.primary};
+      padding-right: 5%;
       & > a { animation: ${fromRight} 0.5s; }
   ` : css`
       display: none;

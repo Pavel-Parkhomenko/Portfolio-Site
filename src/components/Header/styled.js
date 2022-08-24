@@ -47,6 +47,7 @@ export const Avatar = styled.div`
   height: 243px;
   background: url(${avatar}) 50%;
   background-size: cover;
+  box-shadow: 0 0 20px rgba(187, 225, 250, 0.25);
   
   @media (max-width: 568px) {
     width: 174.38px;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../../components/Header'
 import {
   Container, ContainerExtraWorks, ContainerHeader,
@@ -13,6 +13,10 @@ import { infoTitle, technologiesTitle, worksTitle } from '../../mocks'
 import WorksListExtra from '../../components/WorksListExtra'
 
 export default function Home({ changeTheme, icon }) {
+  const [isActive, setIsActive] = useState(false)
+  const handleBurger = () => {
+    setIsActive(!isActive)
+  }
   return (
     <Container>
       <ContainerNav>
@@ -20,16 +24,16 @@ export default function Home({ changeTheme, icon }) {
           icon={icon}
           onClick={changeTheme}
         />
-        <Navigation />
+        <Navigation isActive={isActive} handleBurger={handleBurger} />
       </ContainerNav>
-      <ContainerHeader id="home">
+      <ContainerHeader id="home" isActive={isActive}>
         <Header />
       </ContainerHeader>
       <ContainerInfo id="info">
         <TitleContainer>{ infoTitle }</TitleContainer>
         <InfoCard />
       </ContainerInfo>
-      <ContainerTechnologies>
+      <ContainerTechnologies id="technologies">
         <TitleContainer>
           { technologiesTitle }
         </TitleContainer>
