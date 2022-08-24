@@ -47,7 +47,7 @@ export const Avatar = styled.div`
   height: 243px;
   background: url(${avatar}) 50%;
   background-size: cover;
-  box-shadow: 0 0 20px rgba(187, 225, 250, 0.25);
+  box-shadow: 0 0 10px ${({ theme }) => theme.bgColor.dark};
   
   @media (max-width: 568px) {
     width: 174.38px;
@@ -62,12 +62,14 @@ export const Button = styled.button`
   border-radius: 2px;
   color: white;
   border: 0;
+
+  :hover {
+    transition: 0.2s ease-in;
+    box-shadow: 0 0 10px ${({ theme }) => theme.textColor.secondary};
+  }
   
   & > a {
     color: white;
     text-decoration: none;
-    :hover {
-      text-decoration: underline;
-    }
   }
 `

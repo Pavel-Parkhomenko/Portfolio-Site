@@ -3,6 +3,11 @@ import styled, { css, keyframes } from 'styled-components'
 export const LinkStyled = styled.a`
   color: ${({ theme }) => theme.textColor.primary};
   text-decoration: none;
+  :hover {
+    transition: 0.2s color ease-in;
+    text-decoration: underline;
+    color: ${({ theme }) => theme.textColor.secondary};
+  }
 `
 
 const fromRight = keyframes`
@@ -97,8 +102,6 @@ export const Burger = styled.div`
     }
 
     & > span {
-      //transform: rotate(-45deg);
-      //transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
       background: rgba(255, 255, 255, 0);
     }
   ` : '')}

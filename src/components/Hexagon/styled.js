@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ph1 from '../../assets/stack/css.png'
+import ph1 from '../../assets/stack/extra/css2.jpeg'
 import ph2 from '../../assets/stack/js.png'
 import ph3 from '../../assets/stack/eslint2.jpg'
 import ph4 from '../../assets/stack/ts.webp'
@@ -8,7 +8,7 @@ import ph6 from '../../assets/stack/react.jpg'
 import ph7 from '../../assets/stack/material.png'
 import ph8 from '../../assets/stack/redux.jpg'
 import ph9 from '../../assets/stack/styled-comp.jpg'
-import ph10 from '../../assets/stack/toolkit.png'
+import ph10 from '../../assets/stack/extra/redux-toolkit.png'
 import ph11 from '../../assets/stack/figma.jpg'
 import ph12 from '../../assets/stack/git.jpg'
 import ph13 from '../../assets/stack/mongodb.png'
@@ -21,6 +21,7 @@ export const Container = styled.div`
 `
 // 28px
 export const ContainerItem = styled.div`
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   transform: rotate(120deg);
@@ -31,7 +32,6 @@ export const ContainerItem = styled.div`
   margin-right: 10px;
   margin-top: -28px;
   padding: 0;
-  //transition: 0.5s ease-in-out;
   
   @media (max-width: 568px) {
     width: 68px;
@@ -85,8 +85,4 @@ export const Slide = styled.div`
       default: return ph1
     }
   }});
-  
-  :hover {
-    background-position: 45%;
-  }
 `

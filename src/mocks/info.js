@@ -14,7 +14,8 @@ export default [
   {
     title: 'Why a programmer?',
     summary: `I really like programming, I get a lot of pleasure from it. 
-      For many people it looks like magic`,
+      Programmer is the profession of the future
+`,
     icon: 'programmer',
   },
 ]

@@ -6,7 +6,7 @@ export const dark = {
   },
   textColor: {
     primary: '#fff',
-    secondary: '#919191',
+    secondary: '#aed1da',
   },
 }
 

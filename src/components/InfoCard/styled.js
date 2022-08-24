@@ -41,9 +41,14 @@ export const Card = styled.div`
   margin-bottom: 10px;
   background-color: ${({ theme }) => theme.bgColor.primary};
   color: ${({ theme }) => theme.textColor.primary};
-  
+
   @media (max-width: 568px) {
     width: auto;
+  }
+
+  :hover {
+    transition: 0.5s linear;
+    box-shadow: 0 4px 20px ${({ theme }) => theme.bgColor.dark};
   }
 `
 

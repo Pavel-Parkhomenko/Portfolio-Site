@@ -31,6 +31,7 @@ export const ContainerNav = styled.div`
 export const IconTheme = styled.div`
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background-image: url(${(props) => {
     switch (props.icon) {
       case 'light': return sun

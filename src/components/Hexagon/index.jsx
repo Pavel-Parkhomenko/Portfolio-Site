@@ -40,9 +40,9 @@ export default function Hexagon() {
       <div>
         {Array(5).fill(null).map((item, ind) => (
           // eslint-disable-next-line react/no-array-index-key
-          <ContainerItem key={ind + 10}>
+          <ContainerItem key={ind + 11}>
             <SlideFrom>
-              <Slide img={`ph${ind + 10}`} />
+              <Slide img={`ph${ind + 11}`} />
             </SlideFrom>
           </ContainerItem>
         ))}
