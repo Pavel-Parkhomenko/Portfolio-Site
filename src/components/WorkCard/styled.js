@@ -6,6 +6,7 @@ import toast from '../../assets/projects/toasts.PNG'
 import weather from '../../assets/projects/weather.png'
 import health from '../../assets/projects/your-health.png'
 import defaultImg from '../../assets/projects/default-project.jpg'
+import postApp from '../../assets/projects/post-desktop-1.PNG'
 
 export const Container = styled.div`
   display: flex;
@@ -41,6 +42,7 @@ export const ImgStyled = styled.div`
       case 'Toast Lib': return toast
       case 'Weather App': return weather
       case 'Your Health': return health
+      case 'Post App': return postApp
       default: return defaultImg
     }
   }});

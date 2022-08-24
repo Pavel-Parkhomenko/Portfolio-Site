@@ -25,7 +25,7 @@ export default [
     id: 4,
     title: 'Weather App',
     stack: ['JavaScript', 'TypeScript', 'React', 'Styled-Components', 'Craco', 'Redux/Thunk/Persist',
-      'React-Select', 'react-google-calendar-api', 'Normalize', 'EsLint/Prettier'],
+      'React-Select', 'react-google-calendar-api', 'Normalize', 'EsLint/Prettier', 'API'],
     summary: `An application that displays the weather in populated areas with 
       additional visualization. At the first stage, the user's 
       location is determined automatically.`,
@@ -48,5 +48,14 @@ export default [
     summary: `The application provides basic arithmetic operations, 
       an expression builder and a complete history of all expressions.`,
     linkGH: 'https://github.com/Pavel-Parkhomenko/Expression-Calculator',
+  },
+  {
+    id: 7,
+    title: 'Post App',
+    stack: ['JavaScript', 'React', 'Material UI', 'Redux Toolkit',
+      'EsLint', 'NPM', 'Webpack', 'API'],
+    summary: `An application for viewing user posts. 
+      There is also an internal market and a gallery. Several public APIs are used`,
+    linkGH: 'https://github.com/Pavel-Parkhomenko/Post-App',
   },
 ]
