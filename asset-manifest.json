@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.js": "/Portfolio-Site/static/js/main.62496c36.js",
+    "static/media/weather.png": "/Portfolio-Site/static/media/weather.f746199d9f184c9f85a4.png",
+    "static/media/post-desktop-1.PNG": "/Portfolio-Site/static/media/post-desktop-1.b05647d3de9c7d496029.PNG",
+    "static/media/your-health.png": "/Portfolio-Site/static/media/your-health.fb8b8233150a81cd3261.png",
+    "static/media/Parkhomenko_Pavel_CV_Frontend.pdf": "/Portfolio-Site/static/media/Parkhomenko_Pavel_CV_Frontend.fc53dfa69afded79a0fd.pdf",
+    "static/media/drawing.PNG": "/Portfolio-Site/static/media/drawing.8924d63b701049758b5c.PNG",
+    "static/media/todo-antd-desktop.png": "/Portfolio-Site/static/media/todo-antd-desktop.5a67657c8c6ba8a675a5.png",
+    "static/media/avatar.jpg": "/Portfolio-Site/static/media/avatar.b7ce6a90d3532bd45564.jpg",
+    "static/media/react.jpg": "/Portfolio-Site/static/media/react.267e324226ba41c01507.jpg",
+    "static/media/family.png": "/Portfolio-Site/static/media/family.d4c6542eabc36ca30ac9.png",
+    "static/media/toasts.PNG": "/Portfolio-Site/static/media/toasts.b7a8508f21e999cf358f.PNG",
+    "static/media/calculator.PNG": "/Portfolio-Site/static/media/calculator.fd26352978e3a87588ab.PNG",
+    "static/media/nodejs.png": "/Portfolio-Site/static/media/nodejs.12de9b39f63743117e10.png",
+    "static/media/mongodb.png": "/Portfolio-Site/static/media/mongodb.f9efb4cf07a7dc8a900d.png",
+    "static/media/programmer4.png": "/Portfolio-Site/static/media/programmer4.79d6a426e5f26e0751c2.png",
+    "static/media/material.png": "/Portfolio-Site/static/media/material.34c18ef95ba42aac44b5.png",
+    "static/media/default-project.jpg": "/Portfolio-Site/static/media/default-project.b208e144199e158fae53.jpg",
+    "static/media/eslint2.jpg": "/Portfolio-Site/static/media/eslint2.d16981af2a5c84cf227c.jpg",
+    "static/media/css2.jpeg": "/Portfolio-Site/static/media/css2.eb0692b632c3467cddff.jpeg",
+    "static/media/styled-comp.jpg": "/Portfolio-Site/static/media/styled-comp.897410b865ac13e037f0.jpg",
+    "static/media/figma.jpg": "/Portfolio-Site/static/media/figma.1f54dca2cfc7f862aeb0.jpg",
+    "static/media/antd.png": "/Portfolio-Site/static/media/antd.e9c6eb749fe031399583.png",
+    "static/media/git.jpg": "/Portfolio-Site/static/media/git.83d2cf87a1726236c879.jpg",
+    "static/media/university.png": "/Portfolio-Site/static/media/university.2c2e16297942deaed26e.png",
+    "static/media/ts.webp": "/Portfolio-Site/static/media/ts.212a573ee5bfa5bf4439.webp",
+    "static/media/sun.svg": "/Portfolio-Site/static/media/sun.34d61e1c8b9a205f34b6faddca4ca35a.svg",
+    "static/media/moon.svg": "/Portfolio-Site/static/media/moon.15a52d3957b5cea3b327ea585a15c0e4.svg",
+    "static/media/github2.svg": "/Portfolio-Site/static/media/github2.adb057e9b81365542cdfd2327c007aa2.svg",
+    "static/media/vk.svg": "/Portfolio-Site/static/media/vk.8cb7202faca2ad788f837c66d513eee4.svg",
+    "static/media/telegram.svg": "/Portfolio-Site/static/media/telegram.b0589b5e724dd92cc132ddb6a0e049d9.svg",
+    "static/media/linkedin.svg": "/Portfolio-Site/static/media/linkedin.8762f6e957e5d6c297b9cbc434ecf218.svg",
+    "index.html": "/Portfolio-Site/index.html",
+    "main.62496c36.js.map": "/Portfolio-Site/static/js/main.62496c36.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.62496c36.js"
+  ]
+}
