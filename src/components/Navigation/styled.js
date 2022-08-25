@@ -30,12 +30,11 @@ export const MenuContainer = styled.div`
     ${(props) => (props.active ? css`
       position: absolute;
       top: 70px;
-      right: 0;
       display: flex;
       flex-direction: column;
       width: auto;
       justify-content: space-evenly;
-      align-items: flex-start;
+      align-items: flex-end;
       height: 500px;
       background-color: ${({ theme }) => theme.bgColor.primary};
       padding-right: 5%;

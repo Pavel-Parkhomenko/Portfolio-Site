@@ -13,7 +13,7 @@ export default function Navigation({ active, handleBurger }) {
       <MenuContainer active={active}>
         <LinkStyled smooth to="#home">Home</LinkStyled>
         <LinkStyled smooth to="#info">Info</LinkStyled>
-        <LinkStyled smooth to="#technologies">Technologies</LinkStyled>
+        <LinkStyled smooth to="#technologies">Stack</LinkStyled>
         <LinkStyled smooth to="#works">Works</LinkStyled>
         <LinkStyled smooth to="#contact">Contact</LinkStyled>
       </MenuContainer>
