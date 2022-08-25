@@ -1,8 +1,9 @@
 import styled, { css, keyframes } from 'styled-components'
+import { NavHashLink } from 'react-router-hash-link'
 
-export const LinkStyled = styled.a`
+export const LinkStyled = styled(NavHashLink)`
   color: ${({ theme }) => theme.textColor.primary};
-  text-decoration: none;
+  text-decoration: none;  
   :hover {
     transition: 0.2s color ease-in;
     text-decoration: underline;

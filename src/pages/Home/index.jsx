@@ -46,7 +46,9 @@ export default function Home({ changeTheme, icon }) {
       <ContainerExtraWorks>
         <WorksListExtra />
       </ContainerExtraWorks>
-      <Footer id="contact" />
+      <div id="contact">
+        <Footer />
+      </div>
     </Container>
   )
 }

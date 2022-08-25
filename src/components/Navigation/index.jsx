@@ -11,11 +11,11 @@ export default function Navigation({ isActive, handleBurger }) {
         <span />
       </Burger>
       <MenuContainer active={isActive}>
-        <LinkStyled href="#home">Home</LinkStyled>
-        <LinkStyled href="#info">Info</LinkStyled>
-        <LinkStyled href="#technologies">Technologies</LinkStyled>
-        <LinkStyled href="#works">Works</LinkStyled>
-        <LinkStyled href="#contact">Contact</LinkStyled>
+        <LinkStyled smooth to="#home">Home</LinkStyled>
+        <LinkStyled smooth to="#info">Info</LinkStyled>
+        <LinkStyled smooth to="#technologies">Technologies</LinkStyled>
+        <LinkStyled smooth to="#works">Works</LinkStyled>
+        <LinkStyled smooth to="#contact">Contact</LinkStyled>
       </MenuContainer>
     </Container>
   )
