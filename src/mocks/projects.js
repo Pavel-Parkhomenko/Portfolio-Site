@@ -6,6 +6,7 @@ export default [
     summary: `Adaptive layout of a typical page of an Internet resource in the format of the JS language, 
       syntactic sugar JSX and the stylization system React of Styled Components`,
     linkGH: 'https://pavel-parkhomenko.github.io/Markup-Task/',
+    devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export default [
     stack: ['JavaScript', 'React', 'ANTD', 'CSS', 'TypeScript', 'EsLInt'],
     summary: 'This application will allow you to keep your important things',
     linkGH: 'https://github.com/Pavel-Parkhomenko/ANT-ToDo',
+    devices: ['Desktop'],
   },
   {
     id: 3,
@@ -20,6 +22,7 @@ export default [
     stack: ['React', 'Javascript', 'Formik', 'SCSS', 'react-canvas-draw'],
     summary: 'Drawing apps with lots of brush and canvas settings',
     linkGH: 'https://github.com/Pavel-Parkhomenko/Drawing-Machine',
+    devices: ['Desktop'],
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export default [
       additional visualization. At the first stage, the user's 
       location is determined automatically.`,
     linkGH: 'https://github.com/Pavel-Parkhomenko/Weather-API',
+    devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ export default [
     summary: `A Toast Javascript library, for presenting non-blocking notifications. 
       It is extensible and customizable`,
     linkGH: 'https://github.com/Pavel-Parkhomenko/Toast-Lib',
+    devices: ['Desktop'],
   },
   {
     id: 6,
@@ -48,6 +53,7 @@ export default [
     summary: `The application provides basic arithmetic operations, 
       an expression builder and a complete history of all expressions.`,
     linkGH: 'https://github.com/Pavel-Parkhomenko/Expression-Calculator',
+    devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
     id: 7,
@@ -57,5 +63,6 @@ export default [
     summary: `An application for viewing user posts. 
       There is also an internal market and a gallery. Several public APIs are used`,
     linkGH: 'https://github.com/Pavel-Parkhomenko/Post-App',
+    devices: ['Desktop', 'Mobile', 'Tablet'],
   },
 ]

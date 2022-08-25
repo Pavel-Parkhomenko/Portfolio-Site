@@ -1,5 +1,9 @@
 import React from 'react'
-import { Container, FooterItem, FooterText } from './styled'
+import { HashLink } from 'react-router-hash-link'
+import {
+  Container, FooterItem,
+  FooterText, ToTopButton,
+} from './styled'
 
 export default function Footer() {
   return (
@@ -14,6 +18,7 @@ export default function Footer() {
         <FooterItem svg="telegram" href="https://t.me/pasha_235" />
       </div>
       <FooterText>Copyright @2022 All rights reserved</FooterText>
+      <HashLink smooth to="#top"><ToTopButton /></HashLink>
     </Container>
   )
 }

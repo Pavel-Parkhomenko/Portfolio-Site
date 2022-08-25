@@ -68,9 +68,25 @@ export const Title = styled.h3`
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  line-height: 44px;
-  margin: 0 0 5px 0;
+  //line-height: 44px;
+  margin: 0;
   color: ${({ theme }) => theme.textColor.primary};
+  
+  @media (max-width: 568px) {
+    font-size: 24px;
+  }
+`
+
+export const TitleAndIcon = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+`
+
+export const IconsContainer = styled.div`
+  display: flex;
+  height: 15px;
 `
 
 export const ContainerStackItem = styled.div`
@@ -84,7 +100,10 @@ export const StackItem = styled.div`
   font-size: 12px;
   display: flex;
   align-items: center;
-  background-color: ${({ theme, extraCard }) => (
+  background-color: ${({
+    theme,
+    extraCard,
+  }) => (
     extraCard === 'yes' ? theme.bgColor.primary : theme.bgColor.secondary
   )};
   color: ${({ theme }) => theme.textColor.primary};
@@ -95,8 +114,8 @@ export const StackItem = styled.div`
   white-space: nowrap;
 
   :hover {
-    background-color: #161936;
-    color: white;
+    transition: 0.3s;
+    box-shadow: 0 0 4px ${({ theme }) => theme.bgColor.dark};
   }
 `
 

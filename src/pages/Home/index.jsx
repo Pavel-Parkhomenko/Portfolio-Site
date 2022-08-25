@@ -24,9 +24,9 @@ export default function Home({ changeTheme, icon }) {
           icon={icon}
           onClick={changeTheme}
         />
-        <Navigation isActive={isActive} handleBurger={handleBurger} />
+        <Navigation active={isActive} handleBurger={handleBurger} />
       </ContainerNav>
-      <ContainerHeader id="home" isActive={isActive}>
+      <ContainerHeader id="home" active={isActive}>
         <Header />
       </ContainerHeader>
       <ContainerInfo id="info">

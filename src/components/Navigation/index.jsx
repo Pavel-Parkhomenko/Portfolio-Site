@@ -4,13 +4,13 @@ import {
   LinkStyled, MenuContainer,
 } from './styled'
 
-export default function Navigation({ isActive, handleBurger }) {
+export default function Navigation({ active, handleBurger }) {
   return (
     <Container>
-      <Burger active={isActive} onClick={handleBurger}>
+      <Burger active={active} onClick={handleBurger}>
         <span />
       </Burger>
-      <MenuContainer active={isActive}>
+      <MenuContainer active={active}>
         <LinkStyled smooth to="#home">Home</LinkStyled>
         <LinkStyled smooth to="#info">Info</LinkStyled>
         <LinkStyled smooth to="#technologies">Technologies</LinkStyled>

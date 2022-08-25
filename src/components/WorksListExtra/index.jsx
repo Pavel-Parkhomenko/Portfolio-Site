@@ -8,7 +8,8 @@ export default function WorksListExtra() {
     <Details>
       <Summary style={{ marginBottom: '10px' }}>Show more</Summary>
       { projects.slice(3).map(({
-        id, title, stack, img, summary, linkGH,
+        id, title, stack,
+        img, summary, linkGH, devices,
       }) => (
         <WorkCard
           key={id}
@@ -18,6 +19,7 @@ export default function WorksListExtra() {
           stack={stack}
           summary={summary}
           extraCard="yes"
+          devices={devices}
         />
       )) }
     </Details>

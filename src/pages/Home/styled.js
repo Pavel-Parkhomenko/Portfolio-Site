@@ -65,7 +65,7 @@ export const ContainerHeader = styled.div`
   color: ${({ theme }) => theme.textColor.primary};
   
   @media (max-width: 568px) {
-    ${(props) => (props.isActive ? css`
+    ${(props) => (props.active ? css`
       overflow-y: hidden;
       animation: ${toLeft} 0.5s;
       animation-fill-mode: forwards;

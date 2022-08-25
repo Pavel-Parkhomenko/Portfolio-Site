@@ -6,7 +6,8 @@ export default function WorksList() {
   return (
     <>
       { projects.slice(0, 3).map(({
-        id, title, stack, img, summary, linkGH,
+        id, title, stack,
+        img, summary, linkGH, devices,
       }) => (
         <WorkCard
           key={id}
@@ -15,6 +16,7 @@ export default function WorksList() {
           linkGH={linkGH}
           stack={stack}
           summary={summary}
+          devices={devices}
         />
       )) }
     </>
