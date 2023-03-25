@@ -8,4 +8,6 @@ export {
   technologiesTitle,
   worksTitle,
   svgText,
+  tagsTitle,
+  tags,
 } from './general'

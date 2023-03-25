@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Header from '../../components/Header'
 import {
   Container, ContainerExtraWorks, ContainerHeader,
-  ContainerInfo, ContainerNav, ContainerTechnologies, ContainerWorks, IconTheme, TitleContainer,
+  ContainerInfo, ContainerNav, ContainerTechnologies,
+  ContainerWorks, IconTheme, TitleContainer,
   ContainerTags,
 } from './styled'
 import Navigation from '../../components/Navigation'
@@ -10,7 +11,10 @@ import InfoCard from '../../components/InfoCard'
 import Footer from '../../components/Footer'
 import Hexagon from '../../components/Hexagon'
 import WorksList from '../../components/WorksList'
-import { infoTitle, technologiesTitle, worksTitle } from '../../mocks'
+import {
+  infoTitle, technologiesTitle,
+  worksTitle, tagsTitle,
+} from '../../mocks'
 import WorksListExtra from '../../components/WorksListExtra'
 import Tags from '../../components/Tags'
 
@@ -42,7 +46,7 @@ export default function Home({ changeTheme, icon }) {
         <Hexagon />
       </ContainerTechnologies>
       <ContainerTags>
-        <TitleContainer>{ infoTitle }</TitleContainer>
+        <TitleContainer>{ tagsTitle }</TitleContainer>
         <Tags />
       </ContainerTags>
       <ContainerWorks id="works">

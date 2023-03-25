@@ -4,6 +4,7 @@ import {
 } from './styled'
 import './style.css'
 import TagsCloud from './class'
+import { tags } from '../../mocks'
 
 export default function Tags() {
   const ref = useRef()
@@ -20,31 +21,10 @@ export default function Tags() {
   return (
     <Container>
       <ul className="tags-cloud" ref={ref}>
-        <li className="tag"><span className="wrap">HTML</span></li>
-        <li className="tag"><span className="wrap">Pug</span></li>
-        <li className="tag"><span className="wrap">CSS</span></li>
-        <li className="tag"><span className="wrap">LESS</span></li>
-        <li className="tag"><span className="wrap">PostCSS</span></li>
-        <li className="tag"><span className="wrap">RSCSS</span></li>
-        <li className="tag"><span className="wrap">SVG</span></li>
-        <li className="tag"><span className="wrap">Javascript</span></li>
-        <li className="tag"><span className="wrap">Gulp</span></li>
-        <li className="tag"><span className="wrap">Webpack</span></li>
-        <li className="tag"><span className="wrap">Canvas</span></li>
-        <li className="tag"><span className="wrap">WebGL</span></li>
-        <li className="tag"><span className="wrap">Three.js</span></li>
-        <li className="tag"><span className="wrap">Anime.js</span></li>
-        <li className="tag"><span className="wrap">Barba.js</span></li>
-        <li className="tag"><span className="wrap">Git</span></li>
-        <li className="tag"><span className="wrap">Linux</span></li>
-        <li className="tag"><span className="wrap">Math</span></li>
-        <li className="tag"><span className="wrap">WebGL</span></li>
-        <li className="tag"><span className="wrap">Three.js</span></li>
-        <li className="tag"><span className="wrap">Anime.js</span></li>
-        <li className="tag"><span className="wrap">Barba.js</span></li>
-        <li className="tag"><span className="wrap">Git</span></li>
-        <li className="tag"><span className="wrap">Linux</span></li>
-        <li className="tag"><span className="wrap">Math</span></li>
+        {tags.map(tag => <li className="tag" key={tag}>
+            <span className="wrap">{tag}</span>
+          </li>
+        )}
       </ul>
     </Container>
   )

@@ -8,8 +8,9 @@
 }
 
 .tags-cloud {
-    position: relative;
-    height: 100%;
+    position: relative;;
+    height: 60vmin;
+    width: 60vmin;
     list-style: none;
     opacity: 0;
     user-select: none;
@@ -26,6 +27,12 @@
     font-size: 5vmin;
     font-weight: bold;
     transition: transform .5s linear, opacity .5s linear;
+}
+
+@media (max-width: 568px){
+    .tags-cloud > .tag {
+        top: 45%;
+    }
 }
 
 .tags-cloud > .tag > .wrap {
