@@ -8,14 +8,34 @@ import { tags } from '../../mocks'
 
 export default function Tags() {
   const ref = useRef()
-  function main() {
-    const cloud = new TagsCloud(ref.current);
-    cloud.start()
-    console.log(ref.current)
-  }
 
   useEffect(() => {
-    main()
+    const cloud = new TagsCloud(ref.current);
+    function event() {
+      const { width, top } = ref.current?.getBoundingClientRect()
+      if(top < 1000 && top > 600 && cloud.isStart !== true){
+        cloud.start()
+        console.log('start')
+      } else if(top < (-1) * width + (-100) && cloud.isStart !== false) {
+        cloud.stop()
+        console.log('stop')
+      } else if(top > 1000 && cloud.isStart !== false) {
+        cloud.stop()
+        console.log('stop')
+      }
+    }
+    function clickStart() {
+      if(cloud.isStart !== true){
+        cloud.start()
+        console.log('start')
+      }
+    }
+    window.addEventListener('scroll', event)
+    ref.current?.addEventListener('click', clickStart)
+    return () => {
+      window.removeEventListener('scroll', event)
+      ref.current?.removeEventListener('click', clickStart)
+    }
   }, [])
 
   return (

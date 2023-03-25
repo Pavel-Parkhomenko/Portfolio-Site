@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import TextTyper from 'text-type-animation-effect-react'
 import {
   headerSubTitle,
   headerTitle,
@@ -21,7 +22,9 @@ export default function Header() {
     <Container>
       <TextContainer>
         <Title>{ headerTitle }</Title>
-        <SubTitle>{ headerSubTitle }</SubTitle>
+        <SubTitle>
+          <TextTyper text={headerSubTitle} interval={10} />
+        </SubTitle>
         <Button onClick={handleClick}>
           <a ref={ref} href={doc} download="">{ buttonText }</a>
         </Button>

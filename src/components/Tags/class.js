@@ -32,6 +32,7 @@ export default class TagsCloud {
   #rotationAngle;
   #rotationSpeed;
   #frameRequestId;
+  isStart = false;
 
   constructor(root) {
     this.#root = root;
@@ -131,10 +132,12 @@ export default class TagsCloud {
 
   start() {
     this.#update();
+    this.isStart = true;
     this.#frameRequestId = requestAnimationFrame(this.start.bind(this));
   }
 
   stop() {
+    this.isStart = false;
     cancelAnimationFrame(this.#frameRequestId)
   }
 }

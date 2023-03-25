@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../../components/Header'
 import {
   Container, ContainerExtraWorks, ContainerHeader,
@@ -23,6 +23,7 @@ export default function Home({ changeTheme, icon }) {
   const handleBurger = () => {
     setIsActive(!isActive)
   }
+
   return (
     <Container>
       <ContainerNav>
