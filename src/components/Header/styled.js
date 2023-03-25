@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import avatar from '../../assets/img/avatar.jpg'
 
 export const Container = styled.div`
@@ -67,7 +67,7 @@ export const Button = styled.button`
     transition: 0.2s ease-in;
     box-shadow: 0 0 10px ${({ theme }) => theme.textColor.secondary};
   }
-  
+
   & > a {
     color: white;
     text-decoration: none;

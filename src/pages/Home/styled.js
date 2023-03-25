@@ -88,6 +88,9 @@ export const ContainerInfo = styled.div`
   ${mediaMobile}
 `
 
+export const ContainerTags = styled.div`
+  background-color: ${({ theme }) => theme.bgColor.secondary};
+`
 export const ContainerTechnologies = styled.div`
   padding-left: ${paddLeft};
   padding-right: ${paddRight};

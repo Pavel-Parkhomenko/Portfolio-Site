@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import {
   Container, ContainerExtraWorks, ContainerHeader,
   ContainerInfo, ContainerNav, ContainerTechnologies, ContainerWorks, IconTheme, TitleContainer,
+  ContainerTags,
 } from './styled'
 import Navigation from '../../components/Navigation'
 import InfoCard from '../../components/InfoCard'
@@ -11,6 +12,7 @@ import Hexagon from '../../components/Hexagon'
 import WorksList from '../../components/WorksList'
 import { infoTitle, technologiesTitle, worksTitle } from '../../mocks'
 import WorksListExtra from '../../components/WorksListExtra'
+import Tags from '../../components/Tags'
 
 export default function Home({ changeTheme, icon }) {
   const [isActive, setIsActive] = useState(false)
@@ -39,6 +41,10 @@ export default function Home({ changeTheme, icon }) {
         </TitleContainer>
         <Hexagon />
       </ContainerTechnologies>
+      <ContainerTags>
+        <TitleContainer>{ infoTitle }</TitleContainer>
+        <Tags />
+      </ContainerTags>
       <ContainerWorks id="works">
         <TitleContainer>{ worksTitle }</TitleContainer>
         <WorksList />
