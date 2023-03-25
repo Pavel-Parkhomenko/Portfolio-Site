@@ -13,3 +13,6 @@ export const technologiesTitle = `Technologies that I am interested in.
   I like to use them in my projects`
 
 export const worksTitle = 'My Works'
+
+export const svgText = `Most programmers do their job not because they expect to be paid, but because
+ they enjoy programming`

@@ -50,7 +50,7 @@ export const Avatar = styled.div`
   box-shadow: 0 0 10px ${({ theme }) => theme.bgColor.dark};
   
   @media (max-width: 568px) {
-    width: 174.38px;
+    width: 180px;
     height: 180px;
   }
 `
@@ -71,5 +71,36 @@ export const Button = styled.button`
   & > a {
     color: white;
     text-decoration: none;
+  }
+`
+
+export const AvatarContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: -16px;
+    width: 275px;
+    height: 275px;
+    animation: rotate linear 20s infinite;
+
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (max-width: 568px) {
+      width: 212px;
+      height: 212px;
+    }
+  }
+
+  svg text {
+    font-size: 16px;
+    fill: ${({ theme }) => theme.textColor.primary};
   }
 `

@@ -7,4 +7,5 @@ export {
   infoTitle,
   technologiesTitle,
   worksTitle,
+  svgText,
 } from './general'
