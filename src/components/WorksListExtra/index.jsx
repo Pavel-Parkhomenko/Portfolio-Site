@@ -6,7 +6,7 @@ import { Details, Summary } from './styled'
 export default function WorksListExtra() {
   return (
     <Details>
-      <Summary style={{ marginBottom: '10px' }}>Show more</Summary>
+      <Summary>See even more projects</Summary>
       { projects.slice(3).map(({
         id, title, stack,
         img, summary, linkGH, devices,

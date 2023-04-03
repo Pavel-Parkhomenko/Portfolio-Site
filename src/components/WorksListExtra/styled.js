@@ -8,6 +8,8 @@ export const Details = styled.details`
 
 export const Summary = styled.summary`
   background-color: ${({ theme }) => theme.bgColor.secondary};
-  padding: 10px 0 0 10px;
+  padding: 30px 0 30px 0;
   margin: 0;
+  font-weight: 700;
+  font-size: 22px;
 `

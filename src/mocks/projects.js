@@ -65,4 +65,21 @@ export default [
     linkGH: 'https://github.com/Pavel-Parkhomenko/Post-App',
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
+  {
+    id: 7,
+    title: 'Crypto Tracker',
+    stack: ['JavaScript', 'React', 'API', 'React-Icons', 'NPM', 'Webpack'],
+    summary: 'A small application for viewing the current value of cryptocurrencies',
+    linkGH: 'https://github.com/Pavel-Parkhomenko/crypto-tracker',
+    devices: ['Desktop', 'Mobile'],
+  },
+  {
+    id: 7,
+    title: 'Theme Switch Mini App',
+    stack: ['JavaScript', 'React', 'Mini App', 'NPM', 'Webpack', 'CSS'],
+    summary: `A simple application that does not carry a lot of semantic load, but which allows you 
+    to simply switch the theme of the application`,
+    linkGH: 'https://github.com/Pavel-Parkhomenko/crypto-tracker',
+    devices: ['Desktop', 'Mobile', 'Tablet'],
+  },
 ]
