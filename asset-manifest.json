@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio-Site/static/css/main.6a950743.css",
-    "main.js": "/Portfolio-Site/static/js/main.816a4098.js",
+    "main.js": "/Portfolio-Site/static/js/main.22b08384.js",
     "static/media/weather.png": "/Portfolio-Site/static/media/weather.f746199d9f184c9f85a4.png",
     "static/media/post-desktop-1.PNG": "/Portfolio-Site/static/media/post-desktop-1.b05647d3de9c7d496029.PNG",
     "static/media/your-health.png": "/Portfolio-Site/static/media/your-health.fb8b8233150a81cd3261.png",
     "static/media/Parkhomenko_Pavel_CV_Frontend.pdf": "/Portfolio-Site/static/media/Parkhomenko_Pavel_CV_Frontend.fc53dfa69afded79a0fd.pdf",
     "static/media/drawing.PNG": "/Portfolio-Site/static/media/drawing.8924d63b701049758b5c.PNG",
     "static/media/todo-antd-desktop.png": "/Portfolio-Site/static/media/todo-antd-desktop.5a67657c8c6ba8a675a5.png",
+    "static/media/crypto.PNG": "/Portfolio-Site/static/media/crypto.31637405d60ab38d6194.PNG",
     "static/media/avatar.jpg": "/Portfolio-Site/static/media/avatar.b7ce6a90d3532bd45564.jpg",
     "static/media/react.jpg": "/Portfolio-Site/static/media/react.267e324226ba41c01507.jpg",
     "static/media/family.png": "/Portfolio-Site/static/media/family.d4c6542eabc36ca30ac9.png",
@@ -21,6 +22,7 @@
     "static/media/eslint2.jpg": "/Portfolio-Site/static/media/eslint2.d16981af2a5c84cf227c.jpg",
     "static/media/css2.jpeg": "/Portfolio-Site/static/media/css2.eb0692b632c3467cddff.jpeg",
     "static/media/styled-comp.jpg": "/Portfolio-Site/static/media/styled-comp.897410b865ac13e037f0.jpg",
+    "static/media/darkswitch.PNG": "/Portfolio-Site/static/media/darkswitch.f619eddb31b2b6a1a3c4.PNG",
     "static/media/figma.jpg": "/Portfolio-Site/static/media/figma.1f54dca2cfc7f862aeb0.jpg",
     "static/media/antd.png": "/Portfolio-Site/static/media/antd.e9c6eb749fe031399583.png",
     "static/media/git.jpg": "/Portfolio-Site/static/media/git.83d2cf87a1726236c879.jpg",
@@ -38,10 +40,10 @@
     "static/media/mobile.svg": "/Portfolio-Site/static/media/mobile.ee3ef0670413048b2cb7efd7c6bb4198.svg",
     "static/media/linkedin.svg": "/Portfolio-Site/static/media/linkedin.8762f6e957e5d6c297b9cbc434ecf218.svg",
     "main.6a950743.css.map": "/Portfolio-Site/static/css/main.6a950743.css.map",
-    "main.816a4098.js.map": "/Portfolio-Site/static/js/main.816a4098.js.map"
+    "main.22b08384.js.map": "/Portfolio-Site/static/js/main.22b08384.js.map"
   },
   "entrypoints": [
     "static/css/main.6a950743.css",
-    "static/js/main.816a4098.js"
+    "static/js/main.22b08384.js"
   ]
 }
