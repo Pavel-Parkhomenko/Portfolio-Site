@@ -66,7 +66,7 @@ export default [
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
-    id: 7,
+    id: 8,
     title: 'Crypto Tracker',
     stack: ['JavaScript', 'React', 'API', 'React-Icons', 'NPM', 'Webpack'],
     summary: 'A small application for viewing the current value of cryptocurrencies',
@@ -74,7 +74,7 @@ export default [
     devices: ['Desktop', 'Mobile'],
   },
   {
-    id: 7,
+    id: 9,
     title: 'Theme Switch Mini App',
     stack: ['JavaScript', 'React', 'Mini App', 'NPM', 'Webpack', 'CSS'],
     summary: `A simple application that does not carry a lot of semantic load, but which allows you 

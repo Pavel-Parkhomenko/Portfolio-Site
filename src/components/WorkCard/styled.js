@@ -135,8 +135,20 @@ export const Summary = styled.div`
 export const LinkToGH = styled.a`
   text-decoration: none;
   color: gray;
-  
+  padding-left: 5px;
+    
   :hover {
     text-decoration: underline;
+  }
+`
+
+export const LinksContainer = styled.div`
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+
+  & > div {
+    display: flex;
+    align-items: center;
   }
 `
