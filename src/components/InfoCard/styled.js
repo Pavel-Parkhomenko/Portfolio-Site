@@ -40,7 +40,7 @@ export const Card = styled.div`
   align-items: center;
   width: 230px;
   height: 210px;
-  box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+  box-shadow: 4px 4px 8px 0 rgba(187, 225, 250, 0.25);
   border-radius: 4px;
   padding: 20px 20px 10px 20px;
   margin-bottom: 10px;
@@ -53,7 +53,7 @@ export const Card = styled.div`
   }
 
   :hover {
-    transition: 0.5s linear;
+    transition: 0.5s;
     box-shadow: 0 4px 20px ${({ theme }) => theme.bgColor.dark};
   }
 `

@@ -9,7 +9,7 @@ export default function InfoCard() {
   return (
     <Container>
       {info.map(({ title, summary, icon }) => (
-        <Card>
+        <Card key={title}>
           <Picture img={icon} />
           <Title>{title}</Title>
           <Summary>{summary}</Summary>

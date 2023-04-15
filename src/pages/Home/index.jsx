@@ -49,6 +49,8 @@ export default function Home({ changeTheme, icon }) {
       <ContainerTags>
         <TitleContainer>{ tagsTitle }</TitleContainer>
         <Tags />
+        <span>Has it stopped? </span>
+        <span>Push to the center faster</span>
       </ContainerTags>
       <ContainerWorks id="works">
         <TitleContainer>{ worksTitle }</TitleContainer>

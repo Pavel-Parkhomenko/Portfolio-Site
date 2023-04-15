@@ -90,6 +90,17 @@ export const ContainerInfo = styled.div`
 
 export const ContainerTags = styled.div`
   background-color: ${({ theme }) => theme.bgColor.secondary};
+
+  & > span {
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.5);
+    display: block;
+    margin-left: 5px;
+  }
+  
+  & > span::first-letter {
+    color: red;
+  }
 `
 export const ContainerTechnologies = styled.div`
   padding-left: ${paddLeft};

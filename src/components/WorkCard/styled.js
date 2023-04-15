@@ -9,6 +9,7 @@ import defaultImg from '../../assets/projects/default-project.jpg'
 import postApp from '../../assets/projects/post-desktop-1.PNG'
 import crypto from '../../assets/projects/crypto.PNG'
 import themeswitch from '../../assets/projects/darkswitch.PNG'
+import merkury from '../../assets/projects/merkury.png'
 
 export const Container = styled.div`
   display: flex;
@@ -47,6 +48,7 @@ export const ImgStyled = styled.div`
       case 'Post App': return postApp
       case 'Crypto Tracker': return crypto
       case 'Theme Switch Mini App': return themeswitch
+      case 'Merkury Figma Landing': return merkury
       default: return defaultImg
     }
   }});

@@ -56,7 +56,7 @@ export default function WorkCard({
             }
           >
             <AiOutlineDeploymentUnit style={{ fontSize: '18px' }} />
-            <LinkToGH href={linkGH}>Deploy</LinkToGH>
+            <LinkToGH href={deploy}>Deploy</LinkToGH>
           </div>
         </LinksContainer>
       </TextContainer>

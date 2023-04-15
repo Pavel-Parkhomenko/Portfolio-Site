@@ -45,11 +45,31 @@ export const FooterItem = styled.a`
   }});
   
   :hover {
-    box-shadow: 5px 5px 5px black;
+    transition: 0.3s;
+    box-shadow: 0 0 4px ${({ theme }) => theme.bgColor.dark};
   }
 `
 
 export const FooterText = styled.span`
   color: gray;
   margin-top: 30px;
+`
+
+export const InfoGit = styled.div`
+  display: inline-block;
+
+  & > img {
+    display: block;
+    margin-top: -10px;
+    color: #37A933FF;
+  }
+`
+
+export const TextInfoGit = styled.p`
+  padding: 5px 5px;
+  margin: -1px 5% 0 5%;
+  color: gray;
+  border: 1px solid ${({ theme }) => theme.bgColor.secondary};
+  text-wrap: normal;
+  border-radius: 10px;
 `
