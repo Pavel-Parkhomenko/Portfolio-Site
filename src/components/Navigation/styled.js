@@ -3,11 +3,25 @@ import { NavHashLink } from 'react-router-hash-link'
 
 export const LinkStyled = styled(NavHashLink)`
   color: ${({ theme }) => theme.textColor.primary};
-  text-decoration: none;  
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  & > svg {
+    margin-left: 10px;
+    font-size: 18px;
+  }
   :hover {
     transition: 0.2s color ease-in;
     text-decoration: underline;
     color: ${({ theme }) => theme.textColor.secondary};
+  }
+
+  @media (min-width: 568px) {
+    & > svg {
+      margin: 0 20px 0 5px;
+      font-size: 18px;
+    }
   }
 `
 
@@ -21,25 +35,43 @@ const fromRight = keyframes`
 `
 
 export const MenuContainer = styled.div`
+  @media (max-width: 568px) {
+    ${(props) => (props.active ? css`
+      width: 150px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 105vh;
+      background-color: ${({ theme }) => theme.bgColor.secondary};
+      color: ${({ theme }) => theme.textColor.primary};
+      padding-right: 5%;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      & {
+        animation: ${fromRight} 0.5s;
+      }
+    ` : css`
+      display: none;
+    `)};
+  }
+`
+
+export const MenuIntoContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 350px;
+  width: 300px;
 
   @media (max-width: 568px) {
     ${(props) => (props.active ? css`
-      position: absolute;
-      top: 70px;
+      margin-top: 150px;
+      width: 150px;
       display: flex;
       flex-direction: column;
-      width: auto;
       justify-content: space-evenly;
       align-items: flex-end;
-      height: 500px;
-      background-color: ${({ theme }) => theme.bgColor.primary};
-      padding-right: 5%;
-      & > a { animation: ${fromRight} 0.5s; }
-  ` : css`
+      height: 50vh;
+    ` : css`
       display: none;
     `)};
   }
@@ -56,15 +88,13 @@ export const Burger = styled.div`
   height: 30px;
   cursor: pointer;
   position: relative;
-  
-  background-color: blue;
-  
+  z-index: 1;
+
   @media (min-width: 568px) {
     display: none;
   }
-  
-  & > span, span:before, span:after {
-    display: block;
+
+  & > div, div:before, div:after {
     width: 100%;
     position: absolute;
     height: 5px;
@@ -72,38 +102,38 @@ export const Burger = styled.div`
     background-color: ${({ theme }) => theme.bgColor.dark};
   }
   
-  & > span:before {
-    content: "";
-    top: -10px;
-    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  & > span {
+  & > div {
     top: 10px;
   }
-  
-  & > span:after {
-    content: "";
-    bottom: -10px;
-    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+
+  & > div:before {
+   content: "";
+   top: -10px;
+   transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  
+
+  & > div:after {
+   content: "";
+   bottom: -10px;
+   transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
   ${(props) => (props.active ? css`
-    & > span:before {
+    & > div:before {
       content: "";
       top: 0;
       transform: rotate(-225deg);
       transition: top 300ms, transform 500ms 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
-    & > span:after {
+    & > div:after {
       content: "";
       bottom: 0;
       transform: rotate(225deg);
       transition: bottom 300ms, transform 500ms 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
-    & > span {
+    & > div {
       background: rgba(255, 255, 255, 0);
     }
   ` : '')}

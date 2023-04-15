@@ -1,21 +1,41 @@
 import React from 'react'
+import { AiOutlineHome, AiOutlineProject, AiOutlineContacts } from 'react-icons/ai'
+import { BsInfoCircle } from 'react-icons/bs'
+import { GrStackOverflow } from 'react-icons/gr'
 import {
   Burger, Container,
-  LinkStyled, MenuContainer,
+  LinkStyled, MenuContainer, MenuIntoContainer,
 } from './styled'
 
 export default function Navigation({ active, handleBurger }) {
   return (
     <Container>
       <Burger active={active} onClick={handleBurger}>
-        <span />
+        <div />
       </Burger>
       <MenuContainer active={active}>
-        <LinkStyled smooth to="#home">Home</LinkStyled>
-        <LinkStyled smooth to="#info">Info</LinkStyled>
-        <LinkStyled smooth to="#technologies">Stack</LinkStyled>
-        <LinkStyled smooth to="#works">Works</LinkStyled>
-        <LinkStyled smooth to="#contact">Contact</LinkStyled>
+        <MenuIntoContainer active={active}>
+          <LinkStyled smooth to="#home">
+            Home
+            <AiOutlineHome />
+          </LinkStyled>
+          <LinkStyled smooth to="#info">
+            Info
+            <BsInfoCircle />
+          </LinkStyled>
+          <LinkStyled smooth to="#technologies">
+            Stack
+            <GrStackOverflow />
+          </LinkStyled>
+          <LinkStyled smooth to="#works">
+            Works
+            <AiOutlineProject />
+          </LinkStyled>
+          <LinkStyled smooth to="#contact">
+            Contact
+            <AiOutlineContacts />
+          </LinkStyled>
+        </MenuIntoContainer>
       </MenuContainer>
     </Container>
   )
