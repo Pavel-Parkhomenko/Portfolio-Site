@@ -9,7 +9,7 @@ export default function WorksListExtra() {
       <Summary>See even more projects</Summary>
       { projects.slice(3).map(({
         id, title, stack,
-        img, summary, linkGH, devices,
+        img, summary, linkGH, devices, deploy,
       }) => (
         <WorkCard
           key={id}
@@ -20,6 +20,7 @@ export default function WorksListExtra() {
           summary={summary}
           extraCard="yes"
           devices={devices}
+          deploy={deploy}
         />
       )) }
     </Details>

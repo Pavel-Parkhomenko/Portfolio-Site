@@ -5,8 +5,8 @@ export default [
     stack: ['JavaScript', 'React', 'Styled-Components', 'TypeScript', 'Figma', 'Pixel-Perfect'],
     summary: `Adaptive layout of a typical page of an Internet resource in the format of the JS language, 
       syntactic sugar JSX and the stylization system React of Styled Components`,
+    linkGH: 'https://pavel-parkhomenko.github.io/Markup-Task/',
     deploy: 'https://pavel-parkhomenko.github.io/Markup-Task/',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Markup-Task/tree/develop',
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
@@ -14,8 +14,8 @@ export default [
     title: 'ANT ToDo',
     stack: ['JavaScript', 'React', 'ANTD', 'CSS', 'TypeScript', 'EsLInt'],
     summary: 'This application will allow you to keep your important things',
-    deploy: '',
     linkGH: 'https://github.com/Pavel-Parkhomenko/ANT-ToDo',
+    deploy: 'https://github.com/Pavel-Parkhomenko/ANT-ToDo',
     devices: ['Desktop'],
   },
   {
@@ -23,8 +23,8 @@ export default [
     title: 'Drawing Machine',
     stack: ['React', 'Javascript', 'Formik', 'SCSS', 'react-canvas-draw'],
     summary: 'Drawing apps with lots of brush and canvas settings',
-    deploy: 'https://pavel-parkhomenko.github.io/Drawing-Machine/',
     linkGH: 'https://github.com/Pavel-Parkhomenko/Drawing-Machine',
+    deploy: 'https://github.com/Pavel-Parkhomenko/Drawing-Machine',
     devices: ['Desktop'],
   },
   {
@@ -35,8 +35,8 @@ export default [
     summary: `An application that displays the weather in populated areas with 
       additional visualization. At the first stage, the user's 
       location is determined automatically.`,
-    deploy: 'https://pavel-parkhomenko.github.io/Weather-API/',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Weather-API/tree/develop',
+    linkGH: 'https://github.com/Pavel-Parkhomenko/Weather-API',
+    deploy: 'https://github.com/Pavel-Parkhomenko/Weather-API',
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
@@ -46,8 +46,8 @@ export default [
       'EsLint/Prettier', 'NPM', 'Rollup', 'StoryBook'],
     summary: `A Toast Javascript library, for presenting non-blocking notifications. 
       It is extensible and customizable`,
-    deploy: 'https://pavel-parkhomenko.github.io/Toast-Lib/?path=/story/toast--toast-example',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Toast-Lib/tree/develop',
+    linkGH: 'https://github.com/Pavel-Parkhomenko/Toast-Lib',
+    deploy: 'https://github.com/Pavel-Parkhomenko/Toast-Lib',
     devices: ['Desktop'],
   },
   {
@@ -57,8 +57,7 @@ export default [
       'EsLint/Prettier', 'Yarn', 'Webpack'],
     summary: `The application provides basic arithmetic operations, 
       an expression builder and a complete history of all expressions.`,
-    deploy: 'https://pavel-parkhomenko.github.io/Expression-Calculator/',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Expression-Calculator/tree/main/task-calculator-v2',
+    linkGH: 'https://github.com/Pavel-Parkhomenko/Expression-Calculator',
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
@@ -68,7 +67,6 @@ export default [
       'EsLint', 'NPM', 'Webpack', 'API'],
     summary: `An application for viewing user posts. 
       There is also an internal market and a gallery. Several public APIs are used`,
-    deploy: '',
     linkGH: 'https://github.com/Pavel-Parkhomenko/Post-App',
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
@@ -77,7 +75,6 @@ export default [
     title: 'Crypto Tracker',
     stack: ['JavaScript', 'React', 'API', 'React-Icons', 'NPM', 'Webpack'],
     summary: 'A small application for viewing the current value of cryptocurrencies',
-    deploy: 'https://pavel-parkhomenko.github.io/crypto-tracker/',
     linkGH: 'https://github.com/Pavel-Parkhomenko/crypto-tracker',
     devices: ['Desktop', 'Mobile'],
   },
@@ -87,38 +84,7 @@ export default [
     stack: ['JavaScript', 'React', 'Mini App', 'NPM', 'Webpack', 'CSS'],
     summary: `A simple application that does not carry a lot of semantic load, but which allows you 
     to simply switch the theme of the application`,
-    deploy: '',
     linkGH: 'https://github.com/Pavel-Parkhomenko/crypto-tracker',
     devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
-    id: 10,
-    title: 'Bella Figma Landing',
-    stack: ['JavaScript', 'React', 'Figma', 'NPM', 'Webpack', 'ANTD', 'styled-components', 'antd-icons'],
-    summary: `Layout of the main page in light 
-      colors for the site according to the layout from figma.`,
-    deploy: '',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Bella-figma-landing',
-    devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
-    id: 11,
-    title: 'Merkury Figma Landing',
-    stack: ['JavaScript', 'React', 'Figma', 'NPM', 'Webpack', 'ANTD', 'styled-components', 'antd-icons'],
-    summary: `Layout of the main page in dark 
-      colors for the site according to the layout from figma.`,
-    deploy: '',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Merkury-figma-landing',
-    devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
-    id: 12,
-    title: 'Service Station App',
-    stack: ['JavaScript', 'React', 'MUI', 'toolkit', 'Webpack', 'chartjs', 'styled-components', 'express', 'mongoose', 'express-validator', 'MERN'],
-    summary: `Client-server application for 
-      automation of a service station. Includes the admin panel and the user's personal account`,
-    deploy: '',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Service-Station-APP',
-    devices: ['Desktop'],
   },
 ]

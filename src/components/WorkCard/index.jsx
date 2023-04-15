@@ -8,8 +8,8 @@ import {
 import mobile from '../../assets/svg/mobile.svg'
 import desktop from '../../assets/svg/desktop.svg'
 import tablet from '../../assets/svg/tablet.svg'
-import gh from '../../assets/img/gh20.png'
-import deploy from '../../assets/img/deploy20.png'
+import ghImg from '../../assets/img/gh20.png'
+import deployImg from '../../assets/img/deploy20.png'
 
 const src = {
   mobile, desktop, tablet,
@@ -22,6 +22,7 @@ export default function WorkCard({
   linkGH,
   extraCard,
   devices,
+  deploy,
 }) {
   return (
     <Container>
@@ -47,11 +48,15 @@ export default function WorkCard({
         <Summary>{summary}</Summary>
         <LinksContainer>
           <div>
-            <img src={gh} alt="test" />
+            <img src={ghImg} alt="code" />
             <LinkToGH href={linkGH}>Code</LinkToGH>
           </div>
-          <div>
-            <img src={deploy} alt="test" />
+          <div
+            style={
+              deploy ? { visibility: 'visible' } : { visibility: 'hidden' }
+            }
+          >
+            <img src={deployImg} alt="deploy" />
             <LinkToGH href={linkGH}>Deploy</LinkToGH>
           </div>
         </LinksContainer>

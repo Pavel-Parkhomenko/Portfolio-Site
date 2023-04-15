@@ -24,6 +24,7 @@
         "import/extensions": "off",
         "import/no-unresolved": "off",
         "react/prop-types": "off",
-        "linebreak-style": "off"
+        "linebreak-style": "off",
+        "react/jsx-one-expression-per-line": "off"
     }
 }

@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import avatar from '../../assets/img/avatar.jpg'
+import avatar2 from '../../assets/img/avatar2.png'
 
 export const Container = styled.div`
   display: flex;
@@ -42,17 +43,33 @@ export const TextContainer = styled.div`
 `
 
 export const Avatar = styled.div`
+  position: absolute;
   border-radius: 50%;
-  width: 243px;
-  height: 243px;
-  background: url(${avatar}) 50%;
+  width: 250px;
+  height: 250px;
+  background-color: #c2071e;
+  bottom: 0;
+  left: 10px;
+`
+
+export const BigCircleAvatar = styled.div`
+  position: relative;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  //background-color: blue;
+`
+
+export const ImgAvatar = styled.div`
+  position: absolute;
+  bottom: -1px;
+  right: 2.7px;
+  background: url(${avatar2}) 100%;
   background-size: cover;
-  box-shadow: 0 0 10px ${({ theme }) => theme.bgColor.dark};
-  
-  @media (max-width: 568px) {
-    width: 180px;
-    height: 180px;
-  }
+  width: 264.5px;
+  height: 300px;
+  border-radius: 50%;
+  //margin-bottom: 21.5px;
 `
 
 export const Button = styled.button`
@@ -79,28 +96,4 @@ export const AvatarContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   position: relative;
-
-  svg {
-    position: absolute;
-    top: -16px;
-    width: 275px;
-    height: 275px;
-    animation: rotate linear 20s infinite;
-
-    @keyframes rotate {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    @media (max-width: 568px) {
-      width: 212px;
-      height: 212px;
-    }
-  }
-
-  svg text {
-    font-size: 16px;
-    fill: ${({ theme }) => theme.textColor.primary};
-  }
 `

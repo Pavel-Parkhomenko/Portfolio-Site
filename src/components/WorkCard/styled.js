@@ -135,7 +135,7 @@ export const Summary = styled.div`
 export const LinkToGH = styled.a`
   text-decoration: none;
   color: gray;
-  padding-left: 5px;
+  padding: 2px 0 0 5px;
     
   :hover {
     text-decoration: underline;

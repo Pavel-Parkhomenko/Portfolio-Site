@@ -57,6 +57,8 @@ export const Burger = styled.div`
   cursor: pointer;
   position: relative;
   
+  background-color: blue;
+  
   @media (min-width: 568px) {
     display: none;
   }
