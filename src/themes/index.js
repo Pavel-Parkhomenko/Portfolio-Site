@@ -1,7 +1,7 @@
 export const dark = {
   bgColor: {
     primary: '#21243D',
-    secondary: '#515a88',
+    secondary: '#373c5d',
     dark: '#EDF7FA',
   },
   textColor: {

@@ -2,11 +2,14 @@ import styled from 'styled-components'
 import family from '../../assets/img/family.png'
 import university from '../../assets/img/university.png'
 import programmer from '../../assets/img/programmer4.png'
+import goals from '../../assets/img/goals4.png'
+import thoughts from '../../assets/img/thoughts.png'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   
   @media (max-width: 568px) {
     flex-direction: column;
@@ -20,6 +23,8 @@ export const Picture = styled.div`
       case 'family': return family
       case 'university': return university
       case 'programmer': return programmer
+      case 'goals': return goals
+      case 'thoughts': return thoughts
       default: return programmer
     }
   }});
@@ -37,13 +42,14 @@ export const Card = styled.div`
   height: 210px;
   box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
   border-radius: 4px;
-  padding: 20px 15px 0 15px;
+  padding: 20px 20px 10px 20px;
   margin-bottom: 10px;
   background-color: ${({ theme }) => theme.bgColor.primary};
   color: ${({ theme }) => theme.textColor.primary};
 
   @media (max-width: 568px) {
     width: auto;
+    padding: 20px 15px 10px 15px;
   }
 
   :hover {

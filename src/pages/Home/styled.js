@@ -122,8 +122,14 @@ export const TitleContainer = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  color: ${({ theme }) => theme.textColor.primary};
+  // color: ${({ theme }) => theme.textColor.primary};
   text-align: center;
   padding: 50px 0 50px 0;
   margin: 0;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, red, fuchsia);
+  text-transform: uppercase;
 `

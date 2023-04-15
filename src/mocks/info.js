@@ -1,8 +1,9 @@
 export default [
   {
     title: 'Who am I?',
-    summary: `I am an ordinary resident of Belarus from a small town. 
-      My small family consists of 4 people`,
+    summary: `I am 21 years old (or already more 😋). 
+      I live in Belarus. 
+      I often go out with friends, but I program no less often.`,
     icon: 'family',
   },
   {
@@ -14,8 +15,23 @@ export default [
   {
     title: 'Why a programmer?',
     summary: `I really like programming, I get a lot of pleasure from it. 
-      Programmer is the profession of the future
+      Programmer is the profession of the future.
 `,
     icon: 'programmer',
+  },
+  {
+    title: 'What are my goals?',
+    summary: `Become a highly qualified IT 
+      specialist and work in a good company to further develop your skills.
+`,
+    icon: 'goals',
+  },
+  {
+    title: 'What I think?',
+    summary: `You need to strive for goals, 
+      make your own bright future, learn and develop, 
+      and not destroy and kill.
+`,
+    icon: 'thoughts',
   },
 ]

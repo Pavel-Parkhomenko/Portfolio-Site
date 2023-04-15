@@ -18,6 +18,7 @@ import ph15 from '../../assets/stack/antd.png'
 export const Container = styled.div`
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 `
 // 28px
 export const ContainerItem = styled.div`

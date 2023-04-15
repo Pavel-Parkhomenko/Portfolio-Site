@@ -1,4 +1,5 @@
 import React from 'react'
+import { AiFillGithub, AiOutlineDeploymentUnit } from 'react-icons/ai'
 import {
   Container, ImgStyled,
   StackItem, TextContainer, Title,
@@ -8,8 +9,6 @@ import {
 import mobile from '../../assets/svg/mobile.svg'
 import desktop from '../../assets/svg/desktop.svg'
 import tablet from '../../assets/svg/tablet.svg'
-import ghImg from '../../assets/img/gh20.png'
-import deployImg from '../../assets/img/deploy20.png'
 
 const src = {
   mobile, desktop, tablet,
@@ -48,7 +47,7 @@ export default function WorkCard({
         <Summary>{summary}</Summary>
         <LinksContainer>
           <div>
-            <img src={ghImg} alt="code" />
+            <AiFillGithub style={{ fontSize: '18px' }} />
             <LinkToGH href={linkGH}>Code</LinkToGH>
           </div>
           <div
@@ -56,7 +55,7 @@ export default function WorkCard({
               deploy ? { visibility: 'visible' } : { visibility: 'hidden' }
             }
           >
-            <img src={deployImg} alt="deploy" />
+            <AiOutlineDeploymentUnit style={{ fontSize: '18px' }} />
             <LinkToGH href={linkGH}>Deploy</LinkToGH>
           </div>
         </LinksContainer>

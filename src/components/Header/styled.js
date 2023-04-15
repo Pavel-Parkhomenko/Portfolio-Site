@@ -45,11 +45,11 @@ export const TextContainer = styled.div`
 export const Avatar = styled.div`
   position: absolute;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  background-color: #c2071e;
+  width: 248px;
+  height: 248px;
+  background-color: ${({ theme }) => theme.bgColor.secondary};
   bottom: 0;
-  left: 10px;
+  left: 11px;
 `
 
 export const BigCircleAvatar = styled.div`
@@ -62,14 +62,13 @@ export const BigCircleAvatar = styled.div`
 
 export const ImgAvatar = styled.div`
   position: absolute;
-  bottom: -1px;
+  bottom: -1.8px;
   right: 2.7px;
   background: url(${avatar2}) 100%;
   background-size: cover;
   width: 264.5px;
   height: 300px;
   border-radius: 50%;
-  //margin-bottom: 21.5px;
 `
 
 export const Button = styled.button`
