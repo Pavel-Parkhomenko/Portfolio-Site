@@ -13,7 +13,8 @@ import Hexagon from '../../components/Hexagon'
 import WorksList from '../../components/WorksList'
 import {
   infoTitle, technologiesTitle,
-  worksTitle, tagsTitle,
+  worksTitle, tagsTitle, fgmprojects,
+  fullstackProjects, apiProjects,
 } from '../../mocks'
 import WorksListExtra from '../../components/WorksListExtra'
 import Tags from '../../components/Tags'
@@ -56,8 +57,26 @@ export default function Home({ changeTheme, icon }) {
         <TitleContainer>{ worksTitle }</TitleContainer>
         <WorksList />
       </ContainerWorks>
-      <ContainerExtraWorks>
-        <WorksListExtra />
+      <ContainerExtraWorks bg="secondary">
+        <WorksListExtra
+          projects={fgmprojects}
+          desc="Figma layout projects"
+          stackColor="primary"
+        />
+      </ContainerExtraWorks>
+      <ContainerExtraWorks bg="primary">
+        <WorksListExtra
+          projects={fullstackProjects}
+          desc="Fullstack projects"
+          stackColor="secondary"
+        />
+      </ContainerExtraWorks>
+      <ContainerExtraWorks bg="secondary">
+        <WorksListExtra
+          projects={apiProjects}
+          desc="Projects using API"
+          stackColor="primary"
+        />
       </ContainerExtraWorks>
       <div id="contact">
         <Footer />

@@ -1,13 +1,12 @@
 import React from 'react'
-import { projects } from '../../mocks'
 import WorkCard from '../WorkCard'
 import { Details, Summary } from './styled'
 
-export default function WorksListExtra() {
+export default function WorksListExtra({ projects, desc, stackColor }) {
   return (
     <Details>
-      <Summary className="not--animation">See even more projects</Summary>
-      { projects.slice(3).map(({
+      <Summary className="not--animation">{ desc }</Summary>
+      { projects.map(({
         id, title, stack,
         img, summary, linkGH, devices, deploy,
       }) => (
@@ -18,7 +17,7 @@ export default function WorksListExtra() {
           linkGH={linkGH}
           stack={stack}
           summary={summary}
-          extraCard="yes"
+          stackColor={stackColor}
           devices={devices}
           deploy={deploy}
         />

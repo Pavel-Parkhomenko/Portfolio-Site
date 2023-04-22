@@ -10,6 +10,9 @@ import postApp from '../../assets/projects/post-desktop-1.PNG'
 import crypto from '../../assets/projects/crypto.PNG'
 import themeswitch from '../../assets/projects/darkswitch.PNG'
 import merkury from '../../assets/projects/merkury.png'
+import restaurant from '../../assets/projects/restaurant.png'
+import presentationapi from '../../assets/projects/presentationapi.png'
+import serviceStation from '../../assets/projects/service-station.png'
 
 export const Container = styled.div`
   display: flex;
@@ -49,6 +52,9 @@ export const ImgStyled = styled.div`
       case 'Crypto Tracker': return crypto
       case 'Theme Switch Mini App': return themeswitch
       case 'Merkury Figma Landing': return merkury
+      case 'Restaurant Landing': return restaurant
+      case 'Presentation API Provider': return presentationapi
+      case 'Service Station App': return serviceStation
       default: return defaultImg
     }
   }});
@@ -108,9 +114,9 @@ export const StackItem = styled.div`
   align-items: center;
   background-color: ${({
     theme,
-    extraCard,
+    stackColor,
   }) => (
-    extraCard === 'yes' ? theme.bgColor.primary : theme.bgColor.secondary
+    stackColor === 'primary' ? theme.bgColor.primary : theme.bgColor.secondary
   )};
   color: ${({ theme }) => theme.textColor.primary};
   margin-bottom: 5px;

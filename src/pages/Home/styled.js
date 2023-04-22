@@ -126,6 +126,13 @@ export const ContainerExtraWorks = styled.div`
   padding-right: ${paddRight};
   background-color: ${({ theme }) => theme.bgColor.secondary};
   color: ${({ theme }) => theme.textColor.primary};
+  background-color: ${(props) => {
+    switch (props.bg) {
+      case 'primary': return ({ theme }) => theme.bgColor.primary
+      case 'secondary': return ({ theme }) => theme.bgColor.secondary
+      default: return ({ theme }) => theme.bgColor.secondary
+    }
+  }};
   ${mediaMobile}
 `
 

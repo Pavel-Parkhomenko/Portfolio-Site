@@ -19,7 +19,7 @@ export default function WorkCard({
   stack,
   summary,
   linkGH,
-  extraCard,
+  stackColor,
   devices,
   deploy,
 }) {
@@ -41,7 +41,7 @@ export default function WorkCard({
         </TitleAndIcon>
         <ContainerStackItem>
           {stack.map((item) => (
-            <StackItem extraCard={extraCard} key={item}>{item}</StackItem>
+            <StackItem stackColor={stackColor} key={item}>{item}</StackItem>
           ))}
         </ContainerStackItem>
         <Summary>{summary}</Summary>

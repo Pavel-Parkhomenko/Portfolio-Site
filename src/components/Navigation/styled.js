@@ -41,7 +41,7 @@ export const MenuContainer = styled.div`
       position: absolute;
       top: 0;
       right: 0;
-      height: 105vh;
+      height: 100vh;
       background-color: ${({ theme }) => theme.bgColor.secondary};
       color: ${({ theme }) => theme.textColor.primary};
       padding-right: 5%;

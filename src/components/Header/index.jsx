@@ -10,10 +10,9 @@ import {
   Title, SubTitle,
   Container, Avatar, Button, TextContainer,
   AvatarContainer, BigCircleAvatar,
-  ImgAvatar,
+  ImgAvatar, ButtonOverGrid,
 } from './styled'
 import doc from '../../assets/Parkhomenko_Pavel_CV_Frontend.pdf'
-import avatar2 from '../../assets/img/avatar2.png'
 
 export default function Header() {
   const ref = useRef()
@@ -27,9 +26,11 @@ export default function Header() {
         <SubTitle>
           <TextTyper text={headerSubTitle} interval={10} />
         </SubTitle>
-        <Button onClick={handleClick}>
-          <a ref={ref} href={doc} download="">{ buttonText }</a>
-        </Button>
+        <ButtonOverGrid>
+          <Button onClick={handleClick}>
+            <a ref={ref} href={doc} download="">{ buttonText }</a>
+          </Button>
+        </ButtonOverGrid>
       </TextContainer>
       <AvatarContainer>
         <BigCircleAvatar>

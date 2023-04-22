@@ -1,15 +1,5 @@
 export default [
   {
-    id: 1,
-    title: 'Your Health',
-    stack: ['JavaScript', 'React', 'Styled-Components', 'TypeScript', 'Figma', 'Pixel-Perfect'],
-    summary: `Adaptive layout of a typical page of an Internet resource in the format of the JS language, 
-      syntactic sugar JSX and the stylization system React of Styled Components`,
-    deploy: 'https://pavel-parkhomenko.github.io/Markup-Task/',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Markup-Task/tree/develop',
-    devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
     id: 2,
     title: 'ANT ToDo',
     stack: ['JavaScript', 'React', 'ANTD', 'CSS', 'TypeScript', 'EsLInt'],
@@ -26,18 +16,6 @@ export default [
     deploy: 'https://pavel-parkhomenko.github.io/Drawing-Machine/',
     linkGH: 'https://github.com/Pavel-Parkhomenko/Drawing-Machine',
     devices: ['Desktop'],
-  },
-  {
-    id: 4,
-    title: 'Weather App',
-    stack: ['JavaScript', 'TypeScript', 'React', 'Styled-Components', 'Craco', 'Redux/Thunk/Persist',
-      'React-Select', 'react-google-calendar-api', 'Normalize', 'EsLint/Prettier', 'API'],
-    summary: `An application that displays the weather in populated areas with 
-      additional visualization. At the first stage, the user's 
-      location is determined automatically.`,
-    deploy: 'https://pavel-parkhomenko.github.io/Weather-API/',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Weather-API/tree/develop',
-    devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
     id: 5,
@@ -62,26 +40,6 @@ export default [
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
   {
-    id: 7,
-    title: 'Post App',
-    stack: ['JavaScript', 'React', 'Material UI', 'Redux Toolkit',
-      'EsLint', 'NPM', 'Webpack', 'API'],
-    summary: `An application for viewing user posts. 
-      There is also an internal market and a gallery. Several public APIs are used`,
-    deploy: '',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Post-App',
-    devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
-    id: 8,
-    title: 'Crypto Tracker',
-    stack: ['JavaScript', 'React', 'API', 'React-Icons', 'NPM', 'Webpack'],
-    summary: 'A small application for viewing the current value of cryptocurrencies',
-    deploy: 'https://pavel-parkhomenko.github.io/crypto-tracker/',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/crypto-tracker',
-    devices: ['Desktop', 'Mobile'],
-  },
-  {
     id: 9,
     title: 'Theme Switch Mini App',
     stack: ['JavaScript', 'React', 'Mini App', 'NPM', 'Webpack', 'CSS'],
@@ -90,35 +48,5 @@ export default [
     deploy: '',
     linkGH: 'https://github.com/Pavel-Parkhomenko/crypto-tracker',
     devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
-    id: 10,
-    title: 'Bella Figma Landing',
-    stack: ['JavaScript', 'React', 'Figma', 'NPM', 'Webpack', 'ANTD', 'styled-components', 'antd-icons'],
-    summary: `Layout of the main page in light 
-      colors for the site according to the layout from figma.`,
-    deploy: '',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Bella-figma-landing',
-    devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
-    id: 11,
-    title: 'Merkury Figma Landing',
-    stack: ['JavaScript', 'React', 'Figma', 'NPM', 'Webpack', 'ANTD', 'styled-components', 'antd-icons'],
-    summary: `Layout of the main page in dark 
-      colors for the site according to the layout from figma.`,
-    deploy: '',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Merkury-figma-landing',
-    devices: ['Desktop', 'Mobile', 'Tablet'],
-  },
-  {
-    id: 12,
-    title: 'Service Station App',
-    stack: ['JavaScript', 'React', 'MUI', 'toolkit', 'Webpack', 'chartjs', 'styled-components', 'express', 'mongoose', 'express-validator', 'MERN'],
-    summary: `Client-server application for 
-      automation of a service station. Includes the admin panel and the user's personal account`,
-    deploy: '',
-    linkGH: 'https://github.com/Pavel-Parkhomenko/Service-Station-APP',
-    devices: ['Desktop'],
   },
 ]
