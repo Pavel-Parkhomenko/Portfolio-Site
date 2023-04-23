@@ -24,7 +24,7 @@ export default function Header() {
       <TextContainer>
         <Title>{ headerTitle }</Title>
         <SubTitle>
-          <TextTyper text={headerSubTitle} interval={10} />
+          <TextTyper text={headerSubTitle} interval={20} />
         </SubTitle>
         <ButtonOverGrid>
           <Button onClick={handleClick}>

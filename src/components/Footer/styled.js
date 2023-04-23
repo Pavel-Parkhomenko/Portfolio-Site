@@ -17,16 +17,20 @@ export const Container = styled.div`
 `
 
 export const ToTopButton = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background-image: url(${arrowTop});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 40px;
+  background-position-x: 50%;
+  background-position-y: 50%;
   position: absolute;
   right: 10px;
-  top: -25px;
+  top: -10px;
   border-radius: 50%;
-  background-color: ${({ theme }) => theme.bgColor.secondary};
+  padding: 2px;
+  background-color: #21243D;
+  border: 3px solid ${({ theme }) => theme.bgColor.secondary};
 `
 
 export const FooterItem = styled.a`
@@ -61,7 +65,6 @@ export const InfoGit = styled.div`
   & > img {
     display: block;
     margin-top: -10px;
-    color: #37A933FF;
   }
 `
 

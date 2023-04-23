@@ -69,6 +69,7 @@ export const ImgAvatar = styled.div`
   width: 264.5px;
   height: 300px;
   border-radius: 50%;
+  
 `
 
 export const Button = styled.button`
@@ -95,7 +96,7 @@ export const Button = styled.button`
 export const ButtonOverGrid = styled.div`
   width: 184px;
   height: 60px;
-  border: 2px solid red;
+  border: 2px solid #FF6464;
   position: relative;
   display: inline-block;
   border-radius: 5px;

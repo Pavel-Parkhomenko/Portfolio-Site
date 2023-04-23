@@ -38,7 +38,7 @@ export default function Home({ changeTheme, icon }) {
         <Header />
       </ContainerHeader>
       <ContainerInfo id="info">
-        <TitleContainer>{ infoTitle }</TitleContainer>
+        <TitleContainer style={{ zIndex: '1' }}>{ infoTitle }</TitleContainer>
         <InfoCard />
       </ContainerInfo>
       <ContainerTechnologies id="technologies">
@@ -51,7 +51,7 @@ export default function Home({ changeTheme, icon }) {
         <TitleContainer>{ tagsTitle }</TitleContainer>
         <Tags />
         <span>Has it stopped? </span>
-        <span>Push to the center faster</span>
+        <span>Push to the center faster!</span>
       </ContainerTags>
       <ContainerWorks id="works">
         <TitleContainer>{ worksTitle }</TitleContainer>

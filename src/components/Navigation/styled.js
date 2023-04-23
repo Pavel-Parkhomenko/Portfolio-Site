@@ -10,6 +10,7 @@ export const LinkStyled = styled(NavHashLink)`
   & > svg {
     margin-left: 10px;
     font-size: 18px;
+    color: #FF6464;
   }
   :hover {
     transition: 0.2s color ease-in;
