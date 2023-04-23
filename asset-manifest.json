@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Site/static/css/main.6a950743.css",
-    "main.js": "/Portfolio-Site/static/js/main.cd37f5a0.js",
+    "main.js": "/Portfolio-Site/static/js/main.6ba1ee21.js",
     "static/media/weather.png": "/Portfolio-Site/static/media/weather.f746199d9f184c9f85a4.png",
     "static/media/avatar2.png": "/Portfolio-Site/static/media/avatar2.61d926eeb1d6535b8216.png",
     "static/media/post-desktop-1.PNG": "/Portfolio-Site/static/media/post-desktop-1.b05647d3de9c7d496029.PNG",
@@ -46,12 +46,12 @@
     "index.html": "/Portfolio-Site/index.html",
     "static/media/mobile.svg": "/Portfolio-Site/static/media/mobile.ee3ef0670413048b2cb7efd7c6bb4198.svg",
     "static/media/linkedin.svg": "/Portfolio-Site/static/media/linkedin.8762f6e957e5d6c297b9cbc434ecf218.svg",
-    "static/media/curveFooterRed2.svg": "/Portfolio-Site/static/media/curveFooterRed2.c74d2cfaecfcfb15e8d5c2e2da6bfd03.svg",
+    "static/media/curveFooterRed2.svg": "/Portfolio-Site/static/media/curveFooterRed2.57930ac9010f53ac0d5ad98ecd7fbce6.svg",
     "main.6a950743.css.map": "/Portfolio-Site/static/css/main.6a950743.css.map",
-    "main.cd37f5a0.js.map": "/Portfolio-Site/static/js/main.cd37f5a0.js.map"
+    "main.6ba1ee21.js.map": "/Portfolio-Site/static/js/main.6ba1ee21.js.map"
   },
   "entrypoints": [
     "static/css/main.6a950743.css",
-    "static/js/main.cd37f5a0.js"
+    "static/js/main.6ba1ee21.js"
   ]
 }
