@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Site/static/css/main.6a950743.css",
-    "main.js": "/Portfolio-Site/static/js/main.6ba1ee21.js",
+    "main.js": "/Portfolio-Site/static/js/main.35ada206.js",
     "static/media/weather.png": "/Portfolio-Site/static/media/weather.f746199d9f184c9f85a4.png",
     "static/media/avatar2.png": "/Portfolio-Site/static/media/avatar2.61d926eeb1d6535b8216.png",
     "static/media/post-desktop-1.PNG": "/Portfolio-Site/static/media/post-desktop-1.b05647d3de9c7d496029.PNG",
@@ -9,6 +9,7 @@
     "static/media/restaurant.png": "/Portfolio-Site/static/media/restaurant.f4bcfe8a4247a43ee5f6.png",
     "static/media/goals4.png": "/Portfolio-Site/static/media/goals4.1d51f84bf9c7301f9427.png",
     "static/media/Parkhomenko_Pavel_CV_Frontend.pdf": "/Portfolio-Site/static/media/Parkhomenko_Pavel_CV_Frontend.fc53dfa69afded79a0fd.pdf",
+    "static/media/mail.png": "/Portfolio-Site/static/media/mail.1246be05af855a7b1fa7.png",
     "static/media/presentationapi.png": "/Portfolio-Site/static/media/presentationapi.918d677c190e7ded6ed2.png",
     "static/media/service-station.png": "/Portfolio-Site/static/media/service-station.b40ac43aeeebda24ed26.png",
     "static/media/drawing.PNG": "/Portfolio-Site/static/media/drawing.8924d63b701049758b5c.PNG",
@@ -48,10 +49,10 @@
     "static/media/linkedin.svg": "/Portfolio-Site/static/media/linkedin.8762f6e957e5d6c297b9cbc434ecf218.svg",
     "static/media/curveFooterRed2.svg": "/Portfolio-Site/static/media/curveFooterRed2.57930ac9010f53ac0d5ad98ecd7fbce6.svg",
     "main.6a950743.css.map": "/Portfolio-Site/static/css/main.6a950743.css.map",
-    "main.6ba1ee21.js.map": "/Portfolio-Site/static/js/main.6ba1ee21.js.map"
+    "main.35ada206.js.map": "/Portfolio-Site/static/js/main.35ada206.js.map"
   },
   "entrypoints": [
     "static/css/main.6a950743.css",
-    "static/js/main.6ba1ee21.js"
+    "static/js/main.35ada206.js"
   ]
 }
