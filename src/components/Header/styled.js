@@ -72,36 +72,6 @@ export const ImgAvatar = styled.div`
   
 `
 
-export const Button = styled.button`
-  width: 200px;
-  height: 50px;
-  border-radius: inherit;
-  position: absolute;
-  left: -8px;
-  top: 5px;
-  background-color: inherit;
-  border: inherit;
-
-  :hover {
-    width: 204px;
-    left: -10px;
-  }
-
-  & > a {
-    color: ${({ theme }) => theme.textColor.primary};
-    text-decoration: none;
-  }
-`
-
-export const ButtonOverGrid = styled.div`
-  width: 184px;
-  height: 60px;
-  border: 2px solid #FF6464;
-  position: relative;
-  display: inline-block;
-  border-radius: 5px;
-`
-
 export const AvatarContainer = styled.div`
   display: flex;
   justify-content: center;

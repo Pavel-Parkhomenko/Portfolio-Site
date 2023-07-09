@@ -14,6 +14,7 @@ export const Container = styled.div`
   width: 100%;
   background-color: #21243D;
   padding: 30px 0 30px 0;
+  border-top: 30px solid ${({ theme }) => theme.bgColor.secondary};
 `
 
 export const ToTopButton = styled.div`

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Header from '../../components/Header'
 import {
   Container, ContainerExtraWorks, ContainerHeader,
   ContainerInfo, ContainerNav, ContainerTechnologies,
   ContainerWorks, IconTheme, TitleContainer,
-  ContainerTags,
+  ContainerTags, ContainerMailForm,
 } from './styled'
 import Navigation from '../../components/Navigation'
 import InfoCard from '../../components/InfoCard'
@@ -14,10 +14,11 @@ import WorksList from '../../components/WorksList'
 import {
   infoTitle, technologiesTitle,
   worksTitle, tagsTitle, fgmprojects,
-  fullstackProjects, apiProjects,
+  fullstackProjects, apiProjects, emailTitle,
 } from '../../mocks'
 import WorksListExtra from '../../components/WorksListExtra'
 import Tags from '../../components/Tags'
+import MailForm from '../../components/MailForm'
 
 export default function Home({ changeTheme, icon }) {
   const [isActive, setIsActive] = useState(false)
@@ -78,6 +79,10 @@ export default function Home({ changeTheme, icon }) {
           stackColor="primary"
         />
       </ContainerExtraWorks>
+      <ContainerMailForm>
+        <TitleContainer>{ emailTitle }</TitleContainer>
+        <MailForm />
+      </ContainerMailForm>
       <div id="contact">
         <Footer />
       </div>

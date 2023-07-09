@@ -4,15 +4,15 @@ import {
   headerSubTitle,
   headerTitle,
   buttonText,
-  svgText,
 } from '../../mocks'
 import {
   Title, SubTitle,
-  Container, Avatar, Button, TextContainer,
+  Container, Avatar, TextContainer,
   AvatarContainer, BigCircleAvatar,
-  ImgAvatar, ButtonOverGrid,
+  ImgAvatar,
 } from './styled'
 import doc from '../../assets/Parkhomenko_Pavel_CV_Frontend.pdf'
+import Button from '../Button'
 
 export default function Header() {
   const ref = useRef()
@@ -26,11 +26,10 @@ export default function Header() {
         <SubTitle>
           <TextTyper text={headerSubTitle} interval={20} />
         </SubTitle>
-        <ButtonOverGrid>
-          <Button onClick={handleClick}>
-            <a ref={ref} href={doc} download="">{ buttonText }</a>
-          </Button>
-        </ButtonOverGrid>
+        <Button handleClick={handleClick}>
+          { buttonText }
+          <a ref={ref} href={doc} download="" style={{ display: 'none' }}>{ buttonText }</a>
+        </Button>
       </TextContainer>
       <AvatarContainer>
         <BigCircleAvatar>

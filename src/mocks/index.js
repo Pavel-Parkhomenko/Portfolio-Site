@@ -13,4 +13,5 @@ export {
   svgText,
   tagsTitle,
   tags,
+  emailTitle,
 } from './general'

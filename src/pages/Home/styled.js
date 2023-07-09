@@ -151,3 +151,12 @@ export const TitleContainer = styled.p`
   background-image: linear-gradient(to right, red, fuchsia);
   text-transform: uppercase;
 `
+
+export const ContainerMailForm = styled.div`
+  margin-bottom: 50px;
+  padding-left: ${paddLeft};
+  padding-right: ${paddRight};
+  background-color: ${({ theme }) => theme.bgColor.primary};
+  color: ${({ theme }) => theme.textColor.primary};
+  ${mediaMobile}
+`
