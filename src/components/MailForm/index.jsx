@@ -3,7 +3,7 @@ import {
   Form, Input,
   FormImage,
   InputsContainer,
-  TextArea,
+  TextArea, BtnContainer,
 } from './styled'
 
 import mailImg from '../../assets/img/mail.png'
@@ -13,22 +13,18 @@ export default function MailForm() {
   const [form, setForm] = useState({})
   const [mailLink, setMailLink] = useState('')
   const ref = useRef()
-  function handleEmail(event) {
-    setForm({ ...form, email: event.target.value })
-  }
 
   function handleSubject(event) {
-    setForm({ ...form, subject: event.target.value })
+    setForm({ ...form, subject: event.target.value || '' })
   }
 
   function handelBody(event) {
-    setForm({ ...form, body: event.target.value })
+    setForm({ ...form, body: event.target.value || '' })
   }
 
   const handleClick = (event) => {
-    event.preventDefault()
     setMailLink(`
-      mailto:pawelparhomenko@gmail.com?subject=${form.subject}&body=${form.body}
+      mailto:pawelparhomenko@gmail.com?subject=${form.subject || 'Тема'}&body=${form.body || 'Тело письма'}
     `)
   }
 
@@ -38,17 +34,13 @@ export default function MailForm() {
         <img src={mailImg} alt="mail-img" />
       </FormImage>
       <InputsContainer>
-        <Input
-          onChange={(event) => handleEmail(event)}
-          type="email"
-          placeholder="pawelparhomenko@gmail.com"
-          disabled
-        />
         <Input onChange={(event) => handleSubject(event)} type="text" placeholder="Subject" />
         <TextArea onChange={(event) => handelBody(event)} type="text" placeholder="Body" />
-        <Button handleClick={(event) => handleClick(event)}>
-          <a ref={ref} href={mailLink}>Send mail</a>
-        </Button>
+        <a ref={ref} href={mailLink}>
+          <Button handleClick={(event) => handleClick(event)}>
+            Send mail
+          </Button>
+        </a>
       </InputsContainer>
     </Form>
   )

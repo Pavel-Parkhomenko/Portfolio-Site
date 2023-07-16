@@ -7,6 +7,7 @@ export const ButtonOverGrid = styled.div`
   position: relative;
   display: inline-block;
   border-radius: 5px;
+  background-color: ${({ theme }) => theme.bgColor.secondary};
 `
 
 export const ButtonStyled = styled.button`
@@ -19,6 +20,7 @@ export const ButtonStyled = styled.button`
   background-color: inherit;
   border: inherit;
   color: ${({ theme }) => theme.textColor.primary};
+  background-color: ${({ theme }) => theme.bgColor.primary};
 
   :hover {
     width: 204px;

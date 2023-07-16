@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 
 const commonStyles = `
-  border: 1px solid ${({ theme }) => theme.bgColor.secondary};
   font-size: 12px;
   border-radius: 5px;
   padding: 5px;
   outline: none;
 `
 
-export const Form = styled.form`
+export const Form = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,14 +19,16 @@ export const Input = styled.input`
   margin-bottom: 30px;
   height: 30px;
   width: 100%;
+  background-color: ${({ theme }) => theme.bgColor.secondary};
+  border: 1px solid ${({ theme }) => theme.bgColor.dark};
   ${commonStyles}
 `
 
 export const FormImage = styled.div`
   width: 47%;
-  height: 400px;
   display: flex;
   align-items: center;
+  position: relative;
   
   img {
     width: 100%;
@@ -49,7 +50,7 @@ export const InputsContainer = styled.div`
     position: absolute;
     width: 80%;
     left: 10%;
-    top: 0;
+    top: 50px;
     justify-content: center;
     opacity: 0.9;
   }
@@ -60,10 +61,14 @@ export const TextArea = styled.textarea`
   resize: none;
   width: 100%;
   margin-bottom: 30px;
+  background-color: ${({ theme }) => theme.bgColor.secondary};
+  border: 1px solid ${({ theme }) => theme.bgColor.dark};
   ${commonStyles}
 `
 
-export const ButtonEmail = styled.button`
-  margin-top: 30px;
+export const BtnContainer = styled.div`
+  display: flex;
+  justify-content: center;
   width: 100%;
+  background-color: ${({ theme }) => theme.bgColor.primary};
 `
