@@ -13,6 +13,8 @@ import merkury from '../../assets/projects/merkury.png'
 import restaurant from '../../assets/projects/restaurant.png'
 import presentationapi from '../../assets/projects/presentationapi.png'
 import serviceStation from '../../assets/projects/service-station.png'
+import bella from '../../assets/projects/bella.png'
+import memes from '../../assets/projects/memes.png'
 
 export const Container = styled.div`
   display: flex;
@@ -55,6 +57,8 @@ export const ImgStyled = styled.div`
       case 'Restaurant Landing': return restaurant
       case 'Presentation API Provider': return presentationapi
       case 'Service Station App': return serviceStation
+      case 'Bella Figma Landing': return bella
+      case 'Memes Generator': return memes
       default: return defaultImg
     }
   }});

@@ -49,4 +49,14 @@ export default [
     linkGH: 'https://github.com/Pavel-Parkhomenko/crypto-tracker',
     devices: ['Desktop', 'Mobile', 'Tablet'],
   },
+  {
+    id: 10,
+    title: 'Memes Generator',
+    stack: ['JavaScript', 'React', 'API', 'NPM', 'Webpack', 'CSS', 'html2canvas'],
+    summary: `This application will allow you to make a meme with your picture
+      or take it from the Internet, as well as add text to it`,
+    deploy: 'https://pavel-parkhomenko.github.io/memes-generator/',
+    linkGH: 'https://github.com/Pavel-Parkhomenko/memes-generator',
+    devices: ['Desktop', 'Mobile', 'Tablet'],
+  },
 ]
