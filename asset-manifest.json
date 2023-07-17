@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Site/static/css/main.6a950743.css",
-    "main.js": "/Portfolio-Site/static/js/main.eac3b093.js",
+    "main.js": "/Portfolio-Site/static/js/main.9e2b2462.js",
     "static/media/weather.png": "/Portfolio-Site/static/media/weather.f746199d9f184c9f85a4.png",
     "static/media/avatar2.png": "/Portfolio-Site/static/media/avatar2.61d926eeb1d6535b8216.png",
     "static/media/bella.png": "/Portfolio-Site/static/media/bella.6c68aaa54d41796f0871.png",
@@ -43,7 +43,9 @@
     "static/media/github2.svg": "/Portfolio-Site/static/media/github2.88545b812629f2d11beaea1fe37f1aa0.svg",
     "static/media/desktop.svg": "/Portfolio-Site/static/media/desktop.b2802b7dd7afec741e36597536976224.svg",
     "static/media/tablet.svg": "/Portfolio-Site/static/media/tablet.49ca1a682e4c1feb42db7fc66375a276.svg",
+    "static/media/cat.svg": "/Portfolio-Site/static/media/cat.64174df9cda917975e38b83e549e277d.svg",
     "static/media/vk.svg": "/Portfolio-Site/static/media/vk.82ee4374a4f3c77350b0c36c5a17cd43.svg",
+    "static/media/catUp.svg": "/Portfolio-Site/static/media/catUp.4e63ce43029ff0ef1c4617c2b5268cde.svg",
     "static/media/telegram.svg": "/Portfolio-Site/static/media/telegram.b0589b5e724dd92cc132ddb6a0e049d9.svg",
     "static/media/arrow-top.svg": "/Portfolio-Site/static/media/arrow-top.0465a064adca939332e763b3ac308c8a.svg",
     "index.html": "/Portfolio-Site/index.html",
@@ -51,10 +53,10 @@
     "static/media/linkedin.svg": "/Portfolio-Site/static/media/linkedin.8762f6e957e5d6c297b9cbc434ecf218.svg",
     "static/media/curveFooterRed2.svg": "/Portfolio-Site/static/media/curveFooterRed2.57930ac9010f53ac0d5ad98ecd7fbce6.svg",
     "main.6a950743.css.map": "/Portfolio-Site/static/css/main.6a950743.css.map",
-    "main.eac3b093.js.map": "/Portfolio-Site/static/js/main.eac3b093.js.map"
+    "main.9e2b2462.js.map": "/Portfolio-Site/static/js/main.9e2b2462.js.map"
   },
   "entrypoints": [
     "static/css/main.6a950743.css",
-    "static/js/main.eac3b093.js"
+    "static/js/main.9e2b2462.js"
   ]
 }
