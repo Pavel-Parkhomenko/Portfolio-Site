@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+export const BtnContainer = styled.div`
+  position: relative;
+  img {
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+  }
+`
+
+export const CatSvgImg = styled.img``
+
 export const ButtonOverGrid = styled.div`
   width: 184px;
   height: 60px;

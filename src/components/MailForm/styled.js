@@ -21,6 +21,7 @@ export const Input = styled.input`
   width: 100%;
   background-color: ${({ theme }) => theme.bgColor.secondary};
   border: 1px solid ${({ theme }) => theme.bgColor.dark};
+  color: ${({ theme }) => theme.bgColor.dark};
   ${commonStyles}
 `
 
@@ -63,6 +64,7 @@ export const TextArea = styled.textarea`
   margin-bottom: 30px;
   background-color: ${({ theme }) => theme.bgColor.secondary};
   border: 1px solid ${({ theme }) => theme.bgColor.dark};
+  color: ${({ theme }) => theme.bgColor.dark};
   ${commonStyles}
 `
 

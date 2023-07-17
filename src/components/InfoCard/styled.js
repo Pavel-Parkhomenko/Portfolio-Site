@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import family from '../../assets/img/family.png'
 import university from '../../assets/img/university.png'
 import programmer from '../../assets/img/programmer4.png'

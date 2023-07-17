@@ -5,7 +5,7 @@ import WorkCard from '../WorkCard'
 export default function WorksList() {
   return (
     <>
-      { projects.slice(0, 3).map(({
+      { projects.map(({
         id, title, stack,
         img, summary, linkGH, devices, deploy,
       }) => (
