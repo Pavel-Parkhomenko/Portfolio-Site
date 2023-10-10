@@ -2,14 +2,15 @@ import styled, { keyframes } from 'styled-components'
 import family from '../../assets/img/family.png'
 import university from '../../assets/img/university.png'
 import programmer from '../../assets/img/programmer4.png'
-import goals from '../../assets/img/goals4.png'
-import thoughts from '../../assets/img/thoughts.png'
+import goals from '../../assets/svg/goals.svg'
+import thoughts from '../../assets/svg/thoughts.svg'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 0 -5px;
   
   @media (max-width: 568px) {
     flex-direction: column;
@@ -29,17 +30,18 @@ export const Picture = styled.div`
     }
   }});
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 `
 
 export const Card = styled.div`
   box-sizing: border-box;
   display: flex;
+  margin: 0 5px;
   flex-direction: column;
   align-items: center;
   width: 230px;
-  height: 210px;
+  min-height: 210px;
   box-shadow: 4px 4px 8px 0 rgba(187, 225, 250, 0.25);
   border-radius: 4px;
   padding: 20px 20px 10px 20px;

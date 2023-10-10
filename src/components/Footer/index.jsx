@@ -5,6 +5,7 @@ import {
   FooterText, ToTopButton,
   InfoGit, TextInfoGit,
 } from './styled'
+
 import curveFooter from '../../assets/svg/curveFooterRed2.svg'
 
 export default function Footer() {

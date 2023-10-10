@@ -32,10 +32,8 @@ export default function Header() {
         </Button>
       </TextContainer>
       <AvatarContainer>
-        <BigCircleAvatar>
-          <Avatar />
-          <ImgAvatar />
-        </BigCircleAvatar>
+        <Avatar />
+        <ImgAvatar />
       </AvatarContainer>
     </Container>
   )

@@ -3,8 +3,8 @@ import {
   ButtonOverGrid, ButtonStyled, BtnContainer, CatSvgImg,
 } from './styled'
 
-import catDownSvg from '../../assets/svg/cat.svg'
-import catUpSvg from '../../assets/svg/catUp.svg'
+import catDownSvg from '../../assets/svg/catDownSvg.svg'
+import catUpSvg from '../../assets/svg/catUpSvg.svg'
 
 export default function Button({ handleClick, children }) {
   const [catSvg, setCatSvg] = useState(false) // false = down, true = up

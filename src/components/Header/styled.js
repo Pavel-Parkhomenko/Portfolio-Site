@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import avatar from '../../assets/img/avatar.jpg'
 import avatar2 from '../../assets/img/avatar2.png'
 
 export const Container = styled.div`
@@ -7,7 +6,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   
-  @media (max-width: 568px) {
+  @media (max-width: 620px) {
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -45,31 +44,32 @@ export const TextContainer = styled.div`
 export const Avatar = styled.div`
   position: absolute;
   border-radius: 50%;
-  width: 248px;
-  height: 248px;
+  min-width: 300px;
+  min-height: 300px;
+  width: 100%;
+  height: 100%;
   background-color: ${({ theme }) => theme.bgColor.secondary};
-  bottom: 0;
-  left: 11px;
+
+  // @media (min-width: 1200px) {
+  //   width: 278px;
+  //   height: 278px;
+  //   left: -11px;
+  // }
 `
 
 export const BigCircleAvatar = styled.div`
   position: relative;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  //background-color: blue;
+
 `
 
 export const ImgAvatar = styled.div`
   position: absolute;
-  bottom: -1.8px;
-  right: 2.7px;
   background: url(${avatar2}) 100%;
   background-size: cover;
-  width: 264.5px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  
+
 `
 
 export const AvatarContainer = styled.div`
@@ -77,4 +77,15 @@ export const AvatarContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  width: 50%;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 350px;
+  max-height: 350px;
+
+  :after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
 `

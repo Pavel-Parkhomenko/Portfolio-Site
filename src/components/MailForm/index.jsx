@@ -6,7 +6,7 @@ import {
   TextArea, BtnContainer,
 } from './styled'
 
-import mailImg from '../../assets/img/mail.png'
+import mailImg from '../../assets/svg/mail.svg'
 import Button from '../Button'
 
 export default function MailForm() {

@@ -66,6 +66,7 @@ export const InfoGit = styled.div`
   & > img {
     display: block;
     margin-top: -10px;
+    margin-left: -20px;
   }
 `
 
