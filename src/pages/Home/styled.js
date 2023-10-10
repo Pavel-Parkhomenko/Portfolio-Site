@@ -12,6 +12,13 @@ const mediaMobile = `
   } 
 `
 
+const roundContainer = `
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+`
+
 export const Container = styled.div`
   height: 100%;
   background-color: ${({ theme }) => theme.bgColor.primary};
@@ -25,6 +32,7 @@ export const ContainerNav = styled.div`
   width: 100%;
   justify-content: space-between;
   padding: 30px ${paddRight} 0  ${paddLeft};
+
   ${mediaMobile}
 `
 
@@ -63,7 +71,7 @@ export const ContainerHeader = styled.div`
   padding: 80px ${paddRight} 70px  ${paddLeft};
   background-color: ${({ theme }) => theme.bgColor.primary};
   color: ${({ theme }) => theme.textColor.primary};
-  
+
   @media (max-width: 568px) {
     ${(props) => (props.active ? css`
       overflow-y: hidden;
@@ -85,22 +93,16 @@ export const ContainerInfo = styled.div`
   padding-right: ${paddRight};
   background-color: ${({ theme }) => theme.bgColor.secondary};
   color: ${({ theme }) => theme.textColor.primary};
+
+  ${roundContainer}
+
   ${mediaMobile}
 `
 
 export const ContainerTags = styled.div`
   background-color: ${({ theme }) => theme.bgColor.secondary};
 
-  & > span {
-    font-size: 10px;
-    color: rgba(128, 128, 128, 0.5);
-    display: block;
-    margin-left: 5px;
-  }
-  
-  & > span::first-letter {
-    color: red;
-  }
+  ${roundContainer}
 `
 export const ContainerTechnologies = styled.div`
   padding-left: ${paddLeft};

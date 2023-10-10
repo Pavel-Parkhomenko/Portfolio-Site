@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import vkSVG from '../../assets/svg/vk.svg'
 import linkedinSVG from '../../assets/svg/linkedin.svg'
 import gitSVG from '../../assets/svg/github2.svg'

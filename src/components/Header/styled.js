@@ -50,11 +50,6 @@ export const Avatar = styled.div`
   height: 100%;
   background-color: ${({ theme }) => theme.bgColor.secondary};
 
-  // @media (min-width: 1200px) {
-  //   width: 278px;
-  //   height: 278px;
-  //   left: -11px;
-  // }
 `
 
 export const BigCircleAvatar = styled.div`

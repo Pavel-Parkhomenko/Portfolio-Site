@@ -40,7 +40,8 @@ export const Card = styled.div`
   margin: 0 5px;
   flex-direction: column;
   align-items: center;
-  width: 230px;
+  min-width: 300px;
+  width: 25%;
   min-height: 210px;
   box-shadow: 4px 4px 8px 0 rgba(187, 225, 250, 0.25);
   border-radius: 4px;
