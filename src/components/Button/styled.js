@@ -27,6 +27,7 @@ export const ButtonStyled = styled.button`
   height: 50px;
   border-radius: inherit;
   position: absolute;
+  cursor: pointer;
   left: -8px;
   top: 5px;
   background-color: inherit;

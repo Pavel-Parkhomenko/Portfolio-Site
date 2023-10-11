@@ -1,3 +1,5 @@
 src/index.jsx
 src/assets
 src/components/Tags
+
+/src/components/NavPretty/index.jsx

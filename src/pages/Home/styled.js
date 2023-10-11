@@ -135,6 +135,7 @@ export const ContainerExtraWorks = styled.div`
       default: return ({ theme }) => theme.bgColor.secondary
     }
   }};
+  
   ${mediaMobile}
 `
 

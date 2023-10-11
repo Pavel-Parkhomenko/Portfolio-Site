@@ -43,11 +43,13 @@ export const ContainerItem = styled.div`
 export const DesktopContainer = styled.div`
   @media (max-width: 568px) {
     display: none;
+  }
 `
 
 export const MobileContainer = styled.div`
   @media (min-width: 568px) {
     display: none;
+  }
 `
 
 export const SlideFrom = styled.div`
@@ -66,6 +68,7 @@ export const Slide = styled.div`
   background-size: cover;
   visibility: visible;
   transform: rotate(-60deg);
+
   background-image: url(${(props) => {
     switch (props.img) {
       case 'ph1': return ph1

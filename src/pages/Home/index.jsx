@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import Header from '../../components/Header'
 import {
-  Container, ContainerExtraWorks, ContainerHeader,
+  Container, ContainerHeader,
   ContainerInfo, ContainerNav, ContainerTechnologies,
   ContainerWorks, IconTheme, TitleContainer,
   ContainerTags, ContainerMailForm,
@@ -11,12 +13,12 @@ import InfoCard from '../../components/InfoCard'
 import Footer from '../../components/Footer'
 import Hexagon from '../../components/Hexagon'
 import WorksList from '../../components/WorksList'
+import NavPretty from '../../components/NavPretty'
 import {
   infoTitle, technologiesTitle,
-  worksTitle, tagsTitle, fgmprojects,
-  fullstackProjects, apiProjects, emailTitle,
+  worksTitle, tagsTitle,
+  emailTitle,
 } from '../../mocks'
-import WorksListExtra from '../../components/WorksListExtra'
 import Tags from '../../components/Tags'
 import MailForm from '../../components/MailForm'
 
@@ -56,27 +58,9 @@ export default function Home({ changeTheme, icon }) {
         <TitleContainer>{ worksTitle }</TitleContainer>
         <WorksList />
       </ContainerWorks>
-      <ContainerExtraWorks bg="secondary">
-        <WorksListExtra
-          projects={fgmprojects}
-          desc="Figma layout projects"
-          stackColor="primary"
-        />
-      </ContainerExtraWorks>
-      <ContainerExtraWorks bg="primary">
-        <WorksListExtra
-          projects={fullstackProjects}
-          desc="Fullstack projects"
-          stackColor="secondary"
-        />
-      </ContainerExtraWorks>
-      <ContainerExtraWorks bg="secondary">
-        <WorksListExtra
-          projects={apiProjects}
-          desc="Projects using API"
-          stackColor="primary"
-        />
-      </ContainerExtraWorks>
+      <ContainerTags>
+        <NavPretty />
+      </ContainerTags>
       <ContainerMailForm>
         <TitleContainer>{ emailTitle }</TitleContainer>
         <MailForm />

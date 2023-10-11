@@ -1,11 +1,9 @@
 import React from 'react'
 import WorkCard from '../WorkCard'
-import { Details, Summary } from './styled'
 
 export default function WorksListExtra({ projects, desc, stackColor }) {
   return (
-    <Details>
-      <Summary className="not--animation">{ desc }</Summary>
+    <div>
       { projects.map(({
         id, title, stack,
         img, summary, linkGH, devices, deploy,
@@ -22,6 +20,6 @@ export default function WorksListExtra({ projects, desc, stackColor }) {
           deploy={deploy}
         />
       )) }
-    </Details>
+    </div>
   )
 }

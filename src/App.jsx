@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import {
   HashRouter,
+  BrowserRouter,
   Routes,
   Route,
 } from 'react-router-dom'
 import Home from './pages/Home'
+import Projects from './pages/Projects'
 import GlobalStyle from './globalStyle'
 import theme from './generalTheme'
 import { dark, light } from './themes'
@@ -22,14 +24,18 @@ function App() {
         : { ...theme, ...dark }}
     >
       <GlobalStyle />
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route
             path="/"
             element={<Home icon={myTheme} changeTheme={changeTheme} />}
           />
+          <Route
+            path="/projs"
+            element={<Projects icon={myTheme} changeTheme={changeTheme} />}
+          />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   )
 }
