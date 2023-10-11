@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+.main * {
+  box-sizing: content-box;
+}
+
+.main {
+  padding: 0;
+}
+
+.content div {
+  grid-area: 1/ 1 / 2 / 2;
+  mix-blend-mode: screen;
+  place-self: center;
+}
+
+.red {
+  color: #f00;
+  transform: translate(0px, 0px);
+  animation: red 2s linear infinite;
+}
+
+.green {
+  color: #0f0;
+  transform: translate(0px, 0px);
+}
+
+.blue {
+  color: #00f;
+  transform: translate(0px, 0px);
+  animation: blue 2s linear infinite;
+}
+
+.content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  min-height: 100px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+@keyframes blue {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(0px, 0px);
+  }
+  83% {
+    transform: translate(10px, 10px);
+  }
+  87% {
+    transform: translate(-10px, -10px);
+  }
+  90% {
+    transform: translate(0px, 0px);
+  }
+  93% {
+    transform: translate(10px, -10px);
+  }
+  97% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes red {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(0px, 0px);
+  }
+  83% {
+    transform: translate(-10px, 10px);
+  }
+  87% {
+    transform: translate(10px, 10px);
+  }
+  90% {
+    transform: translate(0px, 0px);
+  }
+  93% {
+    transform: translate(10px, 10px);
+  }
+  97% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

@@ -26,7 +26,7 @@ export const ToTopButton = styled.div`
   background-position-x: 50%;
   background-position-y: 50%;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: -10px;
   border-radius: 50%;
   padding: 2px;
@@ -71,7 +71,7 @@ export const InfoGit = styled.div`
 `
 
 export const TextInfoGit = styled.p`
-  padding: 5px 5px;
+  padding: 20px 20px;
   margin: -1px 5% 0 5%;
   color: gray;
   border: 1px solid ${({ theme }) => theme.bgColor.secondary};

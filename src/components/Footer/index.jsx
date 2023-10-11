@@ -1,5 +1,6 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link'
+import HeartLine from '../HeartLine'
 import {
   Container, FooterItem,
   FooterText, ToTopButton,
@@ -11,6 +12,7 @@ import curveFooter from '../../assets/svg/curveFooterRed2.svg'
 export default function Footer() {
   return (
     <Container>
+      <HeartLine />
       <div>
         <FooterItem svg="vk" href="https://vk.com/pashaparkhomenko1" />
         <FooterItem

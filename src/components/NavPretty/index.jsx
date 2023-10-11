@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-// import './style.css'
 import { Container } from './styled.js'
 import { Navigate, Link } from 'react-router-dom'
-import arrowToProjs from '../../assets/svg/arrowToProjs.svg'
 
 export default function NavPretty() {
 

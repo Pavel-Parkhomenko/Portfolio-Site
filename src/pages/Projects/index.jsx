@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import {
   Container, ContainerExtraWorks,
   TitleContainer,
@@ -15,10 +15,15 @@ import toHome from '../../assets/svg/arrowHome2.svg'
 
 export default function Projects({ changeTheme, icon }) {
   const navigate = useNavigate()
+  const { pathname } = useLocation()
 
   function handleClick() {
     navigate('/')
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   return (
     <Container>
