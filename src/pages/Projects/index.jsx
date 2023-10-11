@@ -1,23 +1,31 @@
 import React, { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import {
-  Container, ContainerExtraWorks, TitleContainer,
+  Container, ContainerExtraWorks,
+  TitleContainer,
+  ContainerIcon,
+  ToHomeText,
 } from './styled'
 import Footer from '../../components/Footer'
 import {
   fgmprojects, fullstackProjects, apiProjects,
 } from '../../mocks'
 import WorksListExtra from '../../components/WorksListExtra'
+import toHome from '../../assets/svg/arrowHome2.svg'
 
 export default function Projects({ changeTheme, icon }) {
-  const [isActive, setIsActive] = useState(false)
-  const handleBurger = () => {
-    setIsActive(!isActive)
+  const navigate = useNavigate()
+
+  function handleClick() {
+    navigate('/')
   }
 
   return (
     <Container>
       <ContainerExtraWorks bg="secondary">
+        <ContainerIcon onClick={() => handleClick()}>
+          <img src={toHome} alt="to home" />
+        </ContainerIcon>
         <TitleContainer>Figma layout projects</TitleContainer>
         <WorksListExtra
           projects={fgmprojects}

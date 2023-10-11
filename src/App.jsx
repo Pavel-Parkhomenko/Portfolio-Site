@@ -13,9 +13,11 @@ import theme from './generalTheme'
 import { dark, light } from './themes'
 
 function App() {
-  const [myTheme, setMyTheme] = useState('light')
+  const [myTheme, setMyTheme] = useState(localStorage.getItem('__curTheme') || 'light')
   const changeTheme = () => {
     setMyTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
+    console.log(myTheme)
+    localStorage.setItem('__curTheme', myTheme)
   }
   return (
     <ThemeProvider

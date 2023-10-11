@@ -56,3 +56,17 @@ export const TitleContainer = styled.p`
   background-image: linear-gradient(to right, red, fuchsia);
   text-transform: uppercase;
 `
+
+export const ToHomeText = styled.p`
+  // background-color: green;
+  color: red;
+  marging: 20px 0 30px 0;
+  padding: 0;
+`
+export const ContainerIcon = styled.div`
+  left: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+`
